@@ -1,0 +1,128 @@
+.benefits {
+    margin-bottom: 55px;
+
+    @media (min-width: $desktop-width) {
+        max-width: 1590px;
+        margin: 0 auto 125px;
+        padding: 0;
+    }
+}
+
+.benefits_wrap {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 32px;
+    }
+}
+
+.benefits_title  {
+    padding: 0 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 40px;
+        padding: 0;
+        text-align: left;
+    }
+}
+
+.benefits_img {
+    display: block;
+    margin-bottom: 25px;
+
+    @media (min-width: $desktop-width) {
+        width: 456px;
+        height: 456px;
+        margin-bottom: 0;
+    }
+}
+
+.benefits_list {
+    padding: 0 20px;
+
+    @media (min-width: $desktop-width) {
+        width: 1025px;
+        background-color: #f5f5f5;
+        display: grid;
+        grid-template-columns: 400px 400px;
+        padding: 55px 65px 55px 100px;
+        row-gap: 60px;
+        column-gap: 60px;
+    }
+}
+
+.benefits_item {
+    position: relative;
+    padding-left: 85px;
+    padding-top: 23px;
+    margin-bottom: 15px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 69px;
+        height: 69px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0;
+        padding-top: 30px;
+        padding-left: 90px;
+
+        &::before {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+.benefits_item-sale::before {
+    background-image: url("../gif/sale.gif");
+}
+
+.benefits_item-smile::before {
+    background-image: url("../gif/smile.gif");
+}
+
+.benefits_item-box::before {
+    background-image: url("../gif/box.gif");
+}
+
+.benefits_item-certificate::before {
+    background-image: url("../gif/certificate.gif");
+}
+
+.benefits_subtitle {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+
+    @media (min-width: $desktop-width) {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.benefits_text {
+    position: relative;
+    font-size: 12px;
+    line-height: 24px;
+
+    @media (min-width: $desktop-width) {
+        padding-right: 10px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}

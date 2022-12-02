@@ -1,0 +1,88 @@
+.news {
+    padding-top: 30px;
+    padding-bottom: 80px;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 85px;
+    }
+}
+
+.news_title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 90px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 60px;
+        font-size: 32px;
+    }
+}
+
+.news_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        row-gap: 25px;
+        column-gap: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: repeat(3, 490px);
+        column-gap: 60px;
+        row-gap: 30px;
+        margin-bottom: 75px;
+    }
+}
+
+.news_item {
+    padding: 20px 0;
+    @media (min-width: $tablet-width) {
+        padding: 20px;
+        width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 490px;
+        
+    }
+}
+
+.news_button {
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    min-height: 60px;
+    max-width: 360px;
+    margin: 0 auto;
+
+    @media (min-width: $desktop-width) {
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1000px;
+            height: 2px;
+            top: 50%;
+            left: calc(100% + 30px);
+            background-color: $green-color;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 1000px;
+            height: 2px;
+            top: 50%;
+            right: calc(100% + 30px);
+            background-color: $green-color;
+        }
+    }
+}

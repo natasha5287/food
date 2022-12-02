@@ -1,0 +1,105 @@
+.paper_link {
+    color: $primary-color;
+
+    // &:hover {
+    //     border: 5px solid $green-color;
+    //     background-color: #F4F4F4;
+    // }
+
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: 245px 1fr;
+        column-gap: 20px;
+    }
+}
+
+.paper_title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    @media (min-width: $desktop-width) {
+        grid-area: 1/1/2/3;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+}
+
+.paper_stamp {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+        position: relative;
+        display: block;
+        width: max-content;
+        grid-area: 1/2/2/3;
+        z-index: 1;
+        justify-self: end;
+        height: 24px;
+        text-align: center;
+    }
+}
+
+.paper_time {
+    font-size: 12px;
+    color: $lightgrey-color;
+
+    @media (min-width: $desktop-width) {
+        grid-column: 1/3;
+    }
+}
+
+.paper_img {
+    display: block;
+    width: 320px;
+    height: 125px;
+    margin-top: 10px;
+    margin-bottom: 27px;
+
+    @media (min-width: $desktop-width) {
+        width: 244px;
+        height: 228px;
+    }
+}
+
+.paper_box {
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $desktop-width) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.paper_foreword {
+    position: relative;
+    width: 245px;
+    height: 80px;
+    font-size: 16px;
+    line-height: 26px;
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+        content: "...";
+        bottom: 2px;
+        right: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+        height: 95px;
+        width: 180px;
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+.paper_icon {
+    margin-right: 10px;
+    margin-top: 4px;
+}
+

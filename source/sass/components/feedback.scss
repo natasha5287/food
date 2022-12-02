@@ -1,0 +1,58 @@
+.feedback_title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 25px;
+    }
+}
+
+.feedback_star {
+    display: flex;
+    margin-bottom: 25px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 25px;
+    }
+}
+
+.feedback_grade {
+    padding-left: 5px;
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.feedback_input {
+    margin-bottom: 20px;
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+        width: 295px;
+    }
+}
+
+.feedback_comment {
+    height: 120px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.feedback_submit {
+    padding: 18px 20px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+        width: max-content;
+    }
+
+    @media (min-width: $desktop-width) {
+        min-width: 295px;
+    }
+}

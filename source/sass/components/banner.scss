@@ -1,0 +1,58 @@
+.banner {
+    padding-top: 20px;
+    min-height: 110px;
+    background-color: $grey-color;
+
+    @media (min-width: $tablet-width) {
+        background-color: $darkgrey-color;
+        background-image: url("../img/background/banner01.jpg");
+        background-repeat: no-repeat; 
+        background-size: cover;
+
+        @media (min-resolution: 2dppx) {
+            background: no-repeat url('../img/background/banner01@2x.jpg');
+            background-size: cover;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-top: 65px;
+        min-height: 240px;
+    }
+}
+
+.banner_grey {
+    background-image: none;
+    background-color: $grey-color;
+    color: $lightgrey-color;
+    padding-bottom: 5px;
+    min-height: max-content;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 100px;
+        background-color: white;
+    }
+}
+
+.banner_breadcrumbs {
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 25px;
+    }
+}
+
+.banner_title {
+    padding-left: 15px;
+
+    @media (min-width: $tablet-width) {
+        color: $white-color;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-left: 0;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 77px;
+    }
+}

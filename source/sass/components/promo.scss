@@ -1,0 +1,130 @@
+.promo {
+    padding-top: 75px;
+    padding-bottom: 70px;
+    background: no-repeat url('../img/background/promo.png');
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+        background: no-repeat url('../img/background/promo@2x.png');
+        background-size: 100%;
+    }
+
+    @media (min-width: $tablet-width) {
+        padding-top: 5px;
+        padding-bottom: 0;
+        background: no-repeat url('../img/background/promo-desktop.png');
+        background-size: cover;
+
+        @media (min-resolution: 2dppx) {
+            min-height: 580px;
+            background: no-repeat url('../img/background/promo-desktop@2x.png');
+            background-size: cover;
+        }
+    }
+}
+
+.promo_container {
+    @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-left: 165px;
+        padding-right: 120px;
+    }
+}
+
+.promo_box {
+
+    @media (min-width: $tablet-width) {
+        max-width: 30%;
+    }
+
+    @media (min-width: $desktop-width) {
+        max-width: 500px;
+        padding-top: 45px;
+    }
+}
+
+.promo_note {
+    position: relative;
+    display: block;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 20px;
+    color: $green-color;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 170px;
+        height: 2px;
+        top: 12px;
+        left: 100px;
+        background-color: $green-color;
+    }
+
+    @media (min-width: $desktop-width) {
+        &::after {
+            width: 290px;
+        }
+    }
+}
+
+.promo_link {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+        width: max-content;
+        margin-bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+    }
+
+}
+
+.promo_course {
+    margin-bottom: 10px;
+  
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 5px;
+        
+    }
+}
+
+.promo_name {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 5px;
+    }
+} 
+
+.promo_description {
+    padding-right: 20px;
+    margin-bottom: 20px;
+    line-height: 26px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 25px;
+    }
+}
+
+.promo_img {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+    }
+}
+
+.promo_photo {
+    display: block;
+    width: 690px;
+}

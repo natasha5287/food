@@ -1,0 +1,24 @@
+.line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.line:before {
+    position: absolute;
+	content: '';	
+    top: 50%;
+	width: 100vw;
+    height: 2px;
+    background:  $green-color; 
+
+    @media (min-width: $tablet-width) {
+        width: 100%;
+    }
+}
+
+.line_empty {
+    padding: 0 20px;
+    background-color: white;
+    z-index: 2;
+}

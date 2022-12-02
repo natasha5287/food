@@ -1,0 +1,21 @@
+.more_title {
+    line-height: 40px;
+    padding-top: 43px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 65px;
+        padding-top: 80px;
+        text-align: left;
+    }
+}
+
+.more_list {
+    margin-bottom: 180px;
+    margin-left: -10px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 240px;
+    }
+}

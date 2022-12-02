@@ -1,0 +1,138 @@
+.button {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: $primary-color;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: $green-color;
+        border-color: $green-color;
+        color: $white-color;
+    }
+
+    &:hover .button_arrow {
+        fill: $white-color;
+    }
+}
+
+.button-border {
+    letter-spacing: 0.1em;
+    border: 2px solid $primary-color;
+    text-transform: uppercase;
+    padding: 11px 20px;
+
+    @media (min-width: $desktop-width) {
+        padding: 11px 45px;
+    }
+}
+
+.button-border-white {
+    color: $white-color;
+    border-color: $white-color;
+    letter-spacing: 0.2em;
+    width: 100%;
+}
+
+.button-circle {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 2px solid $primary-color;
+    border-radius: 50%;
+}
+
+.button-arrow {
+    fill: $primary-color;
+
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:hover {
+        fill: $green-color;
+    }
+}
+
+.button-tab {
+    font-weight: 600;
+    color: $darkgrey-color;
+
+    &:hover {
+        background-color: transparent;
+        color: $green-color;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 14px;
+    }
+}
+
+.button-tab + .button-tab {
+
+    @media (min-width: $desktop-width) {
+        margin-left: 20px;
+    }
+}
+
+.button-tab-active {
+    font-weight: 700;
+    color: $primary-color;
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 20px;
+    text-decoration-color: $green-color;
+}
+
+.button-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &:hover .card_icon {
+        stroke: $primary-color;
+    }
+
+    &:hover .product_icon {
+        stroke: $primary-color;
+    }
+}
+
+.button-line {
+    margin: 0 auto;
+    width: max-content;
+    padding: 17px 45px;
+    font-size: 16px;
+}
+
+.button-green {
+    text-transform: uppercase;
+    padding: 16px 40px;
+    background-color: $green-color;
+    color: $white-color;
+
+    &:hover {
+        background-color: $darkgrey-color;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: max-content;
+    }
+}

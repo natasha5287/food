@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Food by  BCG</title>
+</head>
+<body>
+
+    <header class="header page-header">
+        <div class="header_container">
+        <div class="header_wrap">
+            <a class="header_logo" href="#">
+                <img src="img/logo-header.png" srcset="img/logo-header@2x.png 2x" width="130" height="66" alt="Логотип компании Food by BCG">
+            </a>
+            <button class="header-open" type="button">
+                <span class="visually-hidden">Открыть меню</span>
+            </button>
+        </div>
+        <div class="header_box">
+            <div class="header_lang">
+                <button class="header_button " type="button">ru</button>
+                <button class="header_button header_button-active" type="button">en</button>
+                <button class="header-close" type="button">
+                    <span class="visually-hidden">Закрыть меню</span>
+                </button>
+            </div>
+            <nav class="nav">
+                <ul class="nav_list nav_list-main">
+                    <li class="nav_item">
+                        <a class="nav_link" href="">Главная</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="catalog.html">Товары</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="questions.html">Q&A</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="articles.html">Статьи</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="about.html">О нас</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="delivery.html">Оплата и доставка</a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="contacts.html">Контакты</a>
+                    </li>
+                    
+                </ul>
+                <ul class="nav_list nav_list-user">
+                    <li class="nav_item">
+                        <a class="nav_link nav_link-user" href="favourite.html">
+                            <svg class="nav_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                <use xlink:href="./img/sprite.svg#heart"></use>
+                            </svg>
+                            <span class="nav_count">9</span>
+                            <span class="nav_text">Сохраненное</span>
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link nav_link-user" href="basket.html">
+                            <svg class="nav_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                <use xlink:href="./img/sprite.svg#trolley"></use>
+                            </svg>
+                            <span class="nav_count">4</span>
+                            <span class="nav_text">Корзина</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="header_phone" href="tel:79261716766">+7 926 171 67 66</a>
+            <ul class="header_social social">
+                <li class="social_item">
+                    <a class="social_link social_link-m" href="https://www.facebook.com/">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg class="social_icon socila_icon-facebook" aria-hidden="true" viewBox="0 0 10 18" width="10" height="18">
+                            <use xlink:href="./img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social_item">
+                    <a class="social_link social_link-m" href="https://www.instagram.com/">
+                        <span class="visually-hidden">Instagram</span>
+                        <svg class="social_icon socila_icon-instagram" aria-hidden="true" viewBox="0 0 18 18" width="18" height="18">
+                            <use xlink:href="./img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social_item">
+                    <a class="social_link social_link-m" href="https://twitter.com/">
+                        <span class="visually-hidden">Twitter</span>
+                        <svg class="social_icon socila_icon-twitter" aria-hidden="true" viewBox="0 0 18 16" width="18" height="16">
+                            <use xlink:href="./img/sprite.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </header>
+
+    <main class="page-body">
+        <h1 class="visually-hidden">Интернет-магазин спортивного питания "Food by BCG"</h1>
+
+        <section class="promo">
+            <div class="container">
+                <div class="promo_container">
+                    <div class="promo_box">
+                        <h2 class="visually-hidden">Детокс курс</h2>
+                        <span class="promo_note">40 дней</span>
+                        <p class="promo_course text-s">Полный детокс курс</p>
+                        <p class="promo_name text-l">Treasure</p>
+                        <p class="promo_description">Для комплексного улучшения физического и ментального здоровья, прививающий<br> правильные привычки.</p>
+                        <a href="catalog.html" class="promo_link button button-border">Каталог товаров</a>
+                    </div>
+                        <div class="promo_img">
+                            <picture>
+                                <source type="image/webp" media="(min-width: 768px)" srcset="./img/box-desktop.webp 1x, ./img/box-desktop@2x.webp 2x">
+                                <img class="promo_photo" src="./img/box-desktop.png" srcset=".img/box-desktop@2x.png" loading="lazy" width="644" height="520" alt="Фотография продуктов детокс курса">
+                            </picture>
+                        </div>
+                        <div class="hidden">
+                            <button class="button button-circle" type="button">
+                                <span class="visually-hidden">Следующий слайд</span>
+                                <svg class="button_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                                    <use xlink:href="./img/sprite.svg#arrow"></use>
+                                </svg>
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular container">
+            <div class="popular_wrap">
+                <h2 class="text">Популярные товары</h2>
+                <div class="popular_tabs tabs">
+                    <button class="button button-tab button-tab-active" type="button">Популярные товары</button>
+                    <button class="button button-tab" type="button">Акции</button>
+                    <button class="button button-tab" type="button">Просмотренное</button>
+                </div>
+            </div>
+            <div class="popular_box">
+                <ul class="popular_list catalog">
+                    <li class="catalog_item">
+                        <section class="card">
+                            <div class="card_box">
+                                <h3 class="text-card">Detox набор</h3>
+                                <span class="card_stamp stamp stamp-top">Top</span>
+                            </div>
+                            <p class="card_note">35 грамм</p>
+                            <div class="card_container">
+                                <div class="card_img">
+                                    <picture>
+                                        <source type="image/webp" media="(min-width: 1920px)" srcset="./img/product-photo-desktop.webp 1x, ./img/product-photo-desktop@2x.webp 2x">
+                                        <source type="image/webp" srcset="./img/product-photo.webp 1x, ./img/product-photo@2x.webp 2x">
+                                        <source media="(min-width: 1920px)" srcset="./img/product-photo-desktop.jpg 1x, ./img/product-photo-desktop@2x.jpg 2x">
+                                        <img class="card_photo" src="./img/product-photo.jpg" srcset="./img/product-photo@2x" loading="lazy" width="142" height="125" alt="">
+                                    </picture>
+                                    <button class="card_favorite button button-heart" type="button">
+                                        <svg class="card_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                            <use xlink:href="./img/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">Добавить в сохраненное</span>
+                                    </button>
+                                </div>
+                                <div class="card_wrap">
+                                    <p class="card_name">Sorbent + Antifungal</p>
+                                    <span class="card_price">790₽</span>
+                                    <a class="card_button button-arrow" href="">
+                                        <span class="visually-hidden">Перейти на страницу товара</span>
+                                        <svg  class="card_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg>
+                                        <svg class="card_arrow-big" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                                            <use xlink:href="./img/sprite.svg#arrow-big"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="catalog_item">
+                        <section class="card">
+                            <div class="card_box">
+                                <h3 class="text-card">Detox набор</h3>
+                                <span class="card_stamp stamp stamp-top">Top</span>
+                            </div>
+                            <p class="card_note">35 грамм</p>
+                            <div class="card_container">
+                                <div class="card_img">
+                                    <picture>
+                                        <source type="image/webp" media="(min-width: 1920px)" srcset="./img/product-photo-desktop.webp 1x, ./img/product-photo-desktop@2x.webp 2x">
+                                        <source type="image/webp" srcset="./img/product-photo.webp 1x, ./img/product-photo@2x.webp 2x">
+                                        <source media="(min-width: 1920px)" srcset="./img/product-photo-desktop.jpg 1x, ./img/product-photo-desktop@2x.jpg 2x">
+                                        <img class="card_photo" src="./img/product-photo.jpg" srcset="./img/product-photo@2x" loading="lazy" width="142" height="125" alt="">
+                                    </picture>
+                                    <button class="card_favorite button button-heart" type="button">
+                                        <svg class="card_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                            <use xlink:href="./img/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">Добавить в сохраненное</span>
+                                    </button>
+                                </div>
+                                <div class="card_wrap">
+                                    <p class="card_name">Sorbent + Antifungal</p>
+                                    <span class="card_price">790₽</span>
+                                    <a class="card_button button-arrow" href="">
+                                        <span class="visually-hidden">Перейти на страницу товара</span>
+                                        <svg  class="card_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg>
+                                        <svg class="card_arrow-big" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                                            <use xlink:href="./img/sprite.svg#arrow-big"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="catalog_item">
+                        <section class="card">
+                            <div class="card_box">
+                                <h3 class="text-card">Detox набор</h3>
+                                <span class="card_stamp stamp stamp-top">Top</span>
+                            </div>
+                            <p class="card_note">35 грамм</p>
+                            <div class="card_container">
+                                <div class="card_img">
+                                    <picture>
+                                        <source type="image/webp" media="(min-width: 1920px)" srcset="./img/product-photo-desktop.webp 1x, ./img/product-photo-desktop@2x.webp 2x">
+                                        <source type="image/webp" srcset="./img/product-photo.webp 1x, ./img/product-photo@2x.webp 2x">
+                                        <source media="(min-width: 1920px)" srcset="./img/product-photo-desktop.jpg 1x, ./img/product-photo-desktop@2x.jpg 2x">
+                                        <img class="card_photo" src="./img/product-photo.jpg" srcset="./img/product-photo@2x" loading="lazy" width="142" height="125" alt="">
+                                    </picture>
+                                    <button class="card_favorite button button-heart" type="button">
+                                        <svg class="card_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                            <use xlink:href="./img/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">Добавить в сохраненное</span>
+                                    </button>
+                                </div>
+                                <div class="card_wrap">
+                                    <p class="card_name">Sorbent + Antifungal</p>
+                                    <span class="card_price">790₽</span>
+                                    <a class="card_button button-arrow" href="">
+                                        <span class="visually-hidden">Перейти на страницу товара</span>
+                                        <svg  class="card_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg>
+                                        <svg class="card_arrow-big" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                                            <use xlink:href="./img/sprite.svg#arrow-big"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="catalog_item">
+                        <section class="card">
+                            <div class="card_box">
+                                <h3 class="text-card">Detox набор</h3>
+                                <span class="card_stamp stamp stamp-top">Top</span>
+                            </div>
+                            <p class="card_note">35 грамм</p>
+                            <div class="card_container">
+                                <div class="card_img">
+                                    <picture>
+                                        <source type="image/webp" media="(min-width: 1920px)" srcset="./img/product-photo-desktop.webp 1x, ./img/product-photo-desktop@2x.webp 2x">
+                                        <source type="image/webp" srcset="./img/product-photo.webp 1x, ./img/product-photo@2x.webp 2x">
+                                        <source media="(min-width: 1920px)" srcset="./img/product-photo-desktop.jpg 1x, ./img/product-photo-desktop@2x.jpg 2x">
+                                        <img class="card_photo" src="./img/product-photo.jpg" srcset="./img/product-photo@2x" loading="lazy" width="142" height="125" alt="">
+                                    </picture>
+                                    <button class="card_favorite button button-heart" type="button">
+                                        <svg class="card_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                            <use xlink:href="./img/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">Добавить в сохраненное</span>
+                                    </button>
+                                </div>
+                                <div class="card_wrap">
+                                    <p class="card_name">Sorbent + Antifungal</p>
+                                    <span class="card_price">790₽</span>
+                                    <a class="card_button button-arrow" href="">
+                                        <span class="visually-hidden">Перейти на страницу товара</span>
+                                        <svg  class="card_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg>
+                                        <svg class="card_arrow-big" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                                            <use xlink:href="./img/sprite.svg#arrow-big"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="catalog_item">
+                        <section class="card">
+                            <div class="card_box">
+                                <h3 class="text-card">Detox набор</h3>
+                                <span class="card_stamp stamp stamp-top">Top</span>
+                            </div>
+                            <p class="card_note">35 грамм</p>
+                            <div class="card_container">
+                                <div class="card_img">
+                                    <picture>
+                                        <source type="image/webp" media="(min-width: 1920px)" srcset="./img/product-photo-desktop.webp 1x, ./img/product-photo-desktop@2x.webp 2x">
+                                        <source type="image/webp" srcset="./img/product-photo.webp 1x, ./img/product-photo@2x.webp 2x">
+                                        <source media="(min-width: 1920px)" srcset="./img/product-photo-desktop.jpg 1x, ./img/product-photo-desktop@2x.jpg 2x">
+                                        <img class="card_photo" src="./img/product-photo.jpg" srcset="./img/product-photo@2x" loading="lazy" width="142" height="125" alt="">
+                                    </picture>
+                                    <button class="card_favorite button button-heart" type="button">
+                                        <svg class="card_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                            <use xlink:href="./img/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">Добавить в сохраненное</span>
+                                    </button>
+                                </div>
+                                <div class="card_wrap">
+                                    <p class="card_name">Sorbent + Antifungal</p>
+                                    <span class="card_price">790₽</span>
+                                    <a class="card_button button-arrow" href="">
+                                        <span class="visually-hidden">Перейти на страницу товара</span>
+                                        <svg  class="card_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg>
+                                        <svg class="card_arrow-big" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                                            <use xlink:href="./img/sprite.svg#arrow-big"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li class="catalog_item">
+                        <section class="card">
+                            <div class="card_box">
+                                <h3 class="text-card">Detox набор</h3>
+                                <span class="card_stamp stamp stamp-top">Top</span>
+                            </div>
+                            <p class="card_note">35 грамм</p>
+                            <div class="card_container">
+                                <div class="card_img">
+                                    <picture>
+                                        <source type="image/webp" media="(min-width: 1920px)" srcset="./img/product-photo-desktop.webp 1x, ./img/product-photo-desktop@2x.webp 2x">
+                                        <source type="image/webp" srcset="./img/product-photo.webp 1x, ./img/product-photo@2x.webp 2x">
+                                        <source media="(min-width: 1920px)" srcset="./img/product-photo-desktop.jpg 1x, ./img/product-photo-desktop@2x.jpg 2x">
+                                        <img class="card_photo" src="./img/product-photo.jpg" srcset="./img/product-photo@2x" loading="lazy" width="142" height="125" alt="">
+                                    </picture>
+                                    <button class="card_favorite button button-heart" type="button">
+                                        <svg class="card_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                            <use xlink:href="./img/sprite.svg#heart"></use>
+                                        </svg>
+                                        <span class="visually-hidden">Добавить в сохраненное</span>
+                                    </button>
+                                </div>
+                                <div class="card_wrap">
+                                    <p class="card_name">Sorbent + Antifungal</p>
+                                    <span class="card_price">790₽</span>
+                                    <a class="card_button button-arrow" href="">
+                                        <span class="visually-hidden">Перейти на страницу товара</span>
+                                        <svg  class="card_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                                        </svg>
+                                        <svg class="card_arrow-big" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                                            <use xlink:href="./img/sprite.svg#arrow-big"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                </ul>
+                <div class="line">
+                    <div class="line_empty">
+                        <a class="button button-border button-line" href="catalog.html">Все товары</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sets">
+            <div class="sets_wrap container">
+                <h2 class="sets_title text">Наши наборы</h2>
+                <div class="sets_tabs tabs">
+                    <button class="button button-tab button-tab-active" type="button">Treasure</button>
+                    <button class="button button-tab" type="button">Новый мир</button>
+                    <button class="button button-tab" type="button">Detox</button>
+                    <button class="button button-tab" type="button">Здоровье тела</button>
+                    <div class="sets_button hidden">
+                        <button class="button button-circle" type="button">
+                            <span class="visually-hidden">Следующий слайд</span>
+                            <svg class="button_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                                <use xlink:href="./img/sprite.svg#arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="sets_box">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="./img/sets-desktop.webp 1x, ./img/sets-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/sets-mobile.webp 1x, ./img/sets-mobile@2x.webp 2x">
+                    <source media="(min-width: 1920px)" srcset="./img/sets-desktop.jpg 1x, ./img/sets-desktop@2x.jpg 2x">
+                    <img class="sets_photo" src="./img/sets-mobile.jpg" srcset="./img/sets-mobile@2x" loading="lazy" width="360" height="231" alt="">
+                </picture>
+                <div class="sets_content">
+                    <p class="sets_course text-s">Полный детокс курс</p>
+                    <p class="sets_name text-l">Treasure</p>
+                    <p class="sets_description">Для комплексного улучшения физического и ментального здоровья, прививающий правильные привычки.</p>
+                    <p class="sets_price">2790₽</p>
+                    <div class="sets_buy">
+                        <a class="sets_link button button-border" href="#">Подробнее</a>
+                        <a class="sets_link button button-green" href="">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <span class="sets_mark mark">Treasure</span>
+        </section>
+
+        <section class="benefits">
+            <h2 class="benefits_title text">Наши преимущества</h2>
+            <div class="benefits_wrap">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1920px)" srcset="./img/food-img-desktop.webp 1x, ./img/food-img-desktop@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/food-img.webp 1x, ./img/food-img@2x.webp 2x">
+                    <source media="(min-width: 1920px)" srcset="./img/food-img-desktop.jpg 1x, ./img/food-img-desktop@2x.jpg 2x">
+                    <img class="benefits_img" src="./img/food-img.jpg" srcset="./img/food-img@2x.jpg" loading="lazy" width="360" height="200" alt="">
+                </picture>
+
+                <ul class="benefits_list">
+                    <li class="benefits_item benefits_item-sale">
+                        <h3 class="benefits_subtitle">Регулярные акции и распродажи</h3>
+                        <p class="benefits_text">Заказывайте регулярно и получайте скидки от нашего магазина БАД-ов 4ood</p>
+                    </li>
+                    <li class="benefits_item benefits_item-smile">
+                        <h3 class="benefits_subtitle">Польза для вашего здоровья</h3>
+                        <p class="benefits_text">Заказывайте регулярно и получайте скидки от нашего магазина БАД-ов 4ood</p>
+                    </li>
+                    <li class="benefits_item benefits_item-box">
+                        <h3 class="benefits_subtitle">Бесплатная доставка</h3>
+                        <p class="benefits_text">Бесплатная доставка в нашем магазине на сумму заказа от 2000 рублей</p>
+                    </li>
+                    <li class="benefits_item benefits_item-certificate">
+                        <h3 class="benefits_subtitle">Сертификация товаров</h3>
+                        <p class="benefits_text">Заказывайте регулярно и получайте скидки от нашего магазина БАД-ов 4ood</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="active container">
+            <h2 class="visually-hidden">Товары для комплексного улучшения здоровья</h2>
+            <div class="active_box">
+                <p class="active_subtitle text-s">с нами у тебя есть все, чтобы</p>
+                <p class="active_name text-l">Жить активно</p>
+                <div class="active_photo">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1920px)" srcset="./img/graphic-desktop.webp 1x, ./img/graphic-desktop@2x.webp 2x">
+                        <source type="image/webp" srcset="./img/graphic.webp 1x, ./img/graphic.webp 2x">
+                        <source media="(min-width: 1920px)" srcset="./img/graphic-desktop.jpg 1x, ./img/graphic-desktop@2x.jpg 2x">
+                        <img class="active_img" src="./img/graphic.png" srcset="./img/graphic@2x.jpg" loading="lazy" width="320" height="263" alt="">
+                    </picture>
+                </div>
+                <p class="active_description">Попробуй наши товары для комплексного улучшения физического и ментального здоровья, прививающий правильные привычки.</p>
+                <a href="catalog.html" class="active_link button button-border">В каталог</a>
+            </div>
+            <span class="mark mark-left">A<span class="mark-uppercase">ctive</span></span>
+        </section>
+
+        <section class="aesthetics">
+            <h2 class="visually-hidden">Товары для комплексного улучшения здоровья</h2>
+            <div class="aesthetics_wrap">
+                <picture>
+                    <source type="image/webp" srcset="./img/aesthetics-desktop.webp 1x, ./img/aesthetics-desktop.webp 2x">
+                    <img class="aesthetics_desktop" src="./img/aesthetics-desktop.jpg" srcset="./img/aesthetics-desktop@2x.jpg" loading="lazy" width="782" height="624" alt="">
+                </picture>
+            </div>
+            <div class="aesthetics_box">
+                <p class="aesthetics_subtitle text-s">Всесторонний подход</p>
+                <p class="aesthetics_name text-l">к красоте</p>
+                <p class="aesthetics_description">Мы заботимся о восприятии нашего продукта и стараемся, чтобы 4ood был не только полезен, но и приятен эстетически.</p>
+                <div class="aesthetics_photo">
+                    <picture>
+                        <source type="image/webp" srcset="./img/aesthetics.webp 1x, ./img/aesthetics.webp 2x">
+                        <img class="aesthetics_img" src="./img/aesthetics.png" srcset="./img/aesthetics@2x.png" loading="lazy" width="176" height="235" alt="">
+                    </picture>
+                </div>
+                <a href="catalog.html" class="aesthetics_link button button-border button-border-white">В каталог</a>
+            </div>
+            <span class="mark mark-dark">aesthetics</span>
+        </section>
+
+        <section class="reviews container">
+            <h2 class="reviews_title text">Отзывы о нас</h2>
+            <div class="reviews_wrap">
+                <ul class="reviews_list">
+                    <li class="reviews_card">
+                            <blockquote class="reviews_blockquote">
+                                <span class="reviews_quotes">“</span>
+                                <p class="reviews_text">Я вынуждена использовать в работе вспомогательные компоненты, воздействовать на организм изнутри. Мне важен результат, а результат зависит от используемых мною средств - поэтому я выбираю 4FOOD company</p>
+                            </blockquote>
+                            <span class="reviews_autor">Амира Х.</span>
+                            <span class="reviews_profession">Врач-подолог</span>
+                            <picture>
+                                <source type="image/webp" srcset="./img/review-01.webp 1x, ./img/review-01@2x.webp 2x">
+                                <img class="reviews_img" src="./img/review-01.png" srcset="./img/review-01@2x.png" loading="lazy" width="68" height="68" alt="">
+                            </picture>
+                    </li>
+                    <!-- <li class="reviews_card">
+                            <blockquote class="reviews_blockquote">
+                                <span class="reviews_quotes">“</span>
+                                <p class="reviews_text">Я очень люблю бег и спорт, но не всегда на всё хватает сил, поэтому я использую БАДы, чтобы держать себя в форме. Продукция 4FOOD company меня полностью устраивает.</p>
+                            </blockquote>
+                            <span class="reviews_autor">Мария Х.</span>
+                            <span class="reviews_profession">Спортсменка</span>
+                            <picture>
+                                <source type="image/webp" srcset="./img/review-02.webp 1x, ./img/review-02@2x.webp 2x">
+                                <img class="reviews_img" src="./img/review-02.png" srcset="./img/review-02@2x.png" loading="lazy" width="68" height="68" alt="">
+                            </picture>   
+                    </li>
+                    <li class="reviews_card">
+                            <blockquote class="reviews_blockquote">
+                                <span class="reviews_quotes">“</span>
+                                <p class="reviews_text">Я всегда стремился вести здоровый образ жизни, но было сложно отказаться от вредных привычек и привить себе правильное питание. БАДы 4FOOD company помогли мне пройти тяжелый период адаптации к новой жизни. Я всем доволен!</p>
+                            </blockquote>
+                            <span class="reviews_autor">Максим Д.</span>
+                            <span class="reviews_profession">Клиент</span>
+                            <picture>
+                                <source type="image/webp" srcset="./img/review-03.webp 1x, ./img/review-03@2x.webp 2x">
+                                <img class="reviews_img" src="./img/review-03.png" srcset="./img/review-03@2x.png" loading="lazy" width="68" height="68" alt="">
+                            </picture>
+                    </li> -->
+                </ul>
+                <div class="reviews_button hidden">
+                    <button class="button button-circle" type="button">
+                        <span class="visually-hidden">Следующий слайд</span>
+                        <svg class="button_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                            <use xlink:href="./img/sprite.svg#arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+                <ol class="reviews_indicators">
+                    <li class="reviews_indicator reviews_indicator-active"></li>
+                    <li class="reviews_indicator"></li>
+                    <li class="reviews_indicator"></li>
+                    <li class="reviews_indicator"></li>
+                </ol>
+        </section>
+
+        <section class="subscription">
+            <h2 class="visually-hidden">Подписка на интернет-магазин "Food by BCG"</h2>
+            <div class="subscription_wrap container">
+                <p class="subscription_subtitle text-s">Подпишись на наши</p>
+                <p class="subscription_title">новые поступления</p>
+                    <form class="subscription_form" method="post">
+                        <input class="subscription_input" type="email" placeholder="Введите адрес электронной почты" required>
+                        <button class="subscription_button button button-border button-border-white">Подписаться</button>
+                    </form>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer page-footer">
+        <div class="container">
+        <div class="footer_wrap">
+            <a href="index.html">
+                <picture>
+                    <source type="image/webp" srcset="./img/logo-footer.webp 1x, ./img/logo-footer.webp 2x">
+                        <img class="footer_logo" src="./img/logo-footer.png" srcset="./img/logo-footer@2x.png" loading="lazy" width="80" height="41" alt="">
+                </picture>
+            </a>
+            <ul class="footer_nav">
+                <li class="footer_item">
+                    <a class="footer_link" href="#">Главная</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="catalog.html">Товары</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="questions.html">Q&A</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="articles.html">Статьи</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="about.html">О нас</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="delivery.html">Оплата и доставка</a>
+                </li>
+                <li class="footer_item">
+                    <a class="footer_link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_box">
+            <ul class="footer_contacts">
+                <li class="footer_contact">
+                    <svg class="footer_icon" aria-hidden="true" viewBox="0 0 14 14" width="14" height="14">
+                        <use xlink:href="./img/sprite.svg#mail"></use>
+                    </svg>
+                    <a class="footer_mail" href="mailto:info@4ood.com">info@4ood.com</a>
+                </li>
+                <li class="footer_contact">
+                    <svg class="footer_icon" aria-hidden="true" viewBox="0 0 14 14" width="14" height="14">
+                        <use xlink:href="./img/sprite.svg#phone-call"></use>
+                    </svg>
+                    <a class="footer_phone" href="tel:79261716766">+7 926 171 67 66</a>
+                    
+                </li>
+                <li class="footer_contact">
+                    <svg class="footer_icon" aria-hidden="true" viewBox="0 0 13 14" width="13" height="14">
+                        <use xlink:href="./img/sprite.svg#map"></use>
+                    </svg>
+                    <address class="footer_address">
+                        <span class="footer_text"> Алтуфьевское ш., 27а, Москва, Россия, 129090</span>
+                    </address>
+                    
+                </li> 
+            </ul>
+            <ul class="footer_social social">
+                <li class="social_item">
+                    <a class="social_link" href="https://www.facebook.com/">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg class="social_icon" aria-hidden="true" viewBox="0 0 10 18" width="10" height="18">
+                            <use xlink:href="./img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social_item">
+                    <a class="social_link" href="https://www.instagram.com/">
+                        <span class="visually-hidden">Instagram</span>
+                        <svg class="social_icon" aria-hidden="true" viewBox="0 0 18 18" width="18" height="18">
+                            <use xlink:href="./img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social_item">
+                    <a class="social_link" href="https://twitter.com/">
+                        <span class="visually-hidden">Twitter</span>
+                        <svg class="social_icon" aria-hidden="true" viewBox="0 0 18 16" width="18" height="16">
+                            <use xlink:href="./img/sprite.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_wrapper">
+            <ul class="footer_payment payment">
+                <li class="payment_item">
+                    <span class="visually-hidden">Платежная система Mastercard</span>
+                    <svg aria-hidden="true" viewBox="0 0 29 23" width="29" height="23">
+                        <use xlink:href="./img/sprite.svg#mastercard"></use>
+                    </svg>
+                </li>
+                <li class="payment_item">
+                    <span class="visually-hidden">Платежная система Visa</span>
+                    <svg aria-hidden="true" viewBox="0 0 29 29" width="29" height="29">
+                        <use xlink:href="./img/sprite.svg#visa"></use>
+                    </svg>
+                </li>
+                <li class="payment_item">
+                    <span class="visually-hidden">Платежная система American Express</span>
+                    <svg aria-hidden="true" viewBox="0 0 29 29" width="29" height="29">
+                        <use xlink:href="./img/sprite.svg#americanexpress"></use>
+                    </svg>
+                </li>
+                <li class="payment_item">
+                    <span class="visually-hidden">Платежная система Mastercard</span>
+                    <svg aria-hidden="true" viewBox="0 0 29 29" width="29" height="29">
+                        <use xlink:href="./img/sprite.svg#mir"></use>
+                    </svg>
+                </li>
+            </ul>
+            <div class="footer_copyright">©2022, All right reserved.</div>
+        </div>
+        </div>
+    </footer>
+   
+    <script src="scripts/main.min.js" type="module"></script>
+</body>
+</html>

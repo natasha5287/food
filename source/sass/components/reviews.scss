@@ -1,0 +1,138 @@
+.reviews {
+    margin-bottom: 60px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 110px;
+    }
+}
+
+.reviews_title {
+    margin-bottom: 5px;
+
+    @media (min-width: $desktop-width) {
+        text-align: left;
+        margin-bottom: 45px;
+    }
+}
+
+.reviews_wrap {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 55px;
+    }
+}
+
+.reviews_list {
+    display: flex;
+    justify-content: center;
+    gap: 63px;
+    margin-bottom: 25px;
+}
+
+.reviews_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 320px;
+
+    @media (min-width: $desktop-width) {
+        width: 488px;
+    }
+}
+
+.reviews_blockquote {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 50px 25px 25px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $green-color;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-top: 65px;
+        padding-bottom: 40px;
+        flex-grow: 1;
+
+        &::before {
+            left: 25px;
+            right: 35px;
+        }
+    }
+}
+
+.reviews_quotes {
+    position: absolute;
+    top: 0;
+    font-weight: 700;
+    font-size: 64px;
+    // line-height: 26px;
+}
+
+.reviews_text {
+    // position: relative;
+    // padding: 25px;
+    font-size: 12px;
+    line-height: 26px;
+    color: #1A1A1A;
+
+    // &::before {
+    //     position: absolute;
+    //     content: "“";
+    //     font-weight: 700;
+    //     top: 0;
+    //     font-size: 64px;
+    //     line-height: 26px;
+    // }
+
+    @media (min-width: $desktop-width) {
+        font-size: 16px;
+        // padding: 40px 25px;
+    }
+}
+
+.reviews_autor {
+    font-weight: 700;
+    font-size: 18px;
+    color: #1A1A1A;
+    text-transform: uppercase;
+}
+
+.reviews_profession {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    color: #C4C4C4;
+}
+
+.reviews_indicators {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    list-style: none;
+}
+
+.reviews_indicator {
+    width: 11px;
+    height: 11px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+
+    &-active {
+        background-color: $green-color;
+    }
+}
+
+
+

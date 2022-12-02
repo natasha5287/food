@@ -1,0 +1,80 @@
+.aesthetics {
+    position: relative;
+    margin-bottom: 30px;
+    color: $white-color;
+    background: linear-gradient(270.74deg, #88929E 6.57%, #5B6773 99.08%);
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        margin-bottom: 105px;
+    }
+}
+
+.aesthetics_wrap {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+        display: block;
+        width: 780px;
+    }
+}
+
+.aesthetics_desktop {
+    @media (min-width: $desktop-width) {
+        display: block;
+    }
+}
+
+.aesthetics_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 55px 20px 70px;
+
+    @media (min-width: $desktop-width) {
+        padding-bottom: 0;
+        margin-left: 165px;
+    }
+}
+
+.aesthetics_subtitle {
+    margin-bottom: 5px;
+}
+
+.aesthetics_name {
+    margin-bottom: 20px;
+}
+
+.aesthetics_description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.aesthetics_photo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 210px;
+        bottom: 0;
+        border: 10px solid rgba(91, 103, 115, 0.2);
+    }
+}
+
+.aesthetics_img {
+    position: relative;
+}
+
+.aesthetics_link {
+    z-index: 1;
+}

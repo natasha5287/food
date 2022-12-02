@@ -1,0 +1,38 @@
+.popular {
+    margin-bottom: 30px;
+
+    @media (min-width: $desktop-width)  {
+        margin-bottom: 95px;
+    }
+}
+
+.popular_wrap {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+}
+
+.popular_tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 35px;
+    
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+    }
+}
+
+.popular_box {
+    margin-left: -10px;
+}
+
+.popular_list {
+    margin-bottom: 30px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 50px;
+    }
+}

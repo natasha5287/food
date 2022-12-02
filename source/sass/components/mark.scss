@@ -1,0 +1,46 @@
+.mark {
+    position: absolute;
+    font-weight: 600;
+    font-size: 128px;
+    line-height: 100px;
+    color: rgba(91, 103, 115, 0.4);
+    opacity: 0.1;
+    overflow: hidden;
+    left: 5px;
+    bottom: 120px;
+
+    @media (min-width: $tablet-width) {
+        right: 0;
+        left: auto;
+        bottom: 100px;
+    }
+
+    @media (min-width: $desktop-width) {
+        line-height: 195px;
+        font-size: 268px;
+        left: 40%;
+        bottom: 0;
+    }
+}
+
+.mark-left {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+        text-transform: uppercase;
+        display: block;
+        left: -165px;
+        bottom: 80px;
+    }
+}
+
+.mark-uppercase {
+    font-weight: 700;
+    font-size: 214px;
+    letter-spacing: 0.6rem;
+}
+
+.mark-dark {
+    color: rgba(255, 255, 255, 0.2);
+    opacity: 0.1;
+}

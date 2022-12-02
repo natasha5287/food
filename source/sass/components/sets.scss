@@ -1,0 +1,184 @@
+.sets {
+    position: relative;
+    padding-bottom: 36px;
+    overflow: hidden;
+
+    @media (min-width: $tablet-width) {
+        background-color: $grey-color;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 105px;
+        padding-top: 65px;
+        padding-bottom: 0;
+    }
+}
+
+.sets_wrap {
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+}
+
+.sets_title {
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+}
+
+.sets_tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 5px;
+    margin: 0 auto;
+    padding: 0 45px;
+    max-width: 360px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: none;
+    }
+
+    @media (min-width: $desktop-width) {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        max-width: 850px;
+    }
+
+}
+
+.sets_tabs .button-tab {
+    text-transform: uppercase;
+    justify-self: left;
+
+    @media (min-width: $desktop-width) {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        margin-left: 0;
+        margin-right: 30px;
+    }
+}
+
+.sets_tabs .button-tab:nth-child(even) {
+    justify-self: right;
+}
+
+.sets_tabs .button-tab-active {
+    text-underline-offset: 8px;
+
+    @media (min-width: $desktop-width) {
+        text-underline-offset: 15px;
+    }
+}
+
+.sets_button {
+    margin-left: 115px;
+}
+
+.sets_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        top: -2px;
+        left: 0;
+        background-color: $primary-color;
+    }
+
+    @media (min-width: $desktop-width)  {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 15px;
+    }
+}
+
+.sets_photo {
+    display: block;
+    margin-bottom: 30px; 
+
+    @media (min-width: $desktop-width) {
+        width: 947px;
+        height: 600px;
+        margin-bottom: 0;
+    }
+}
+
+.sets_content {
+    max-width: 500px;
+    padding: 0 16px 0 20px;
+
+    @media (min-width: $desktop-width) {
+        padding: 45px 0 0;
+    }
+}
+
+.sets_course {
+    margin-bottom: 10px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+        line-height: 22px;
+    }
+}
+
+.sets_name {
+    margin-bottom: 15px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 10px;
+    }
+}
+
+.sets_description {
+    line-height: 26px;
+    margin-bottom: 15px;
+
+    @media (min-width: $desktop-width) {
+        max-width: 405px;
+    }
+}
+
+.sets_price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: $darkgrey-color;
+    margin-bottom: 35px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 20px;
+    }
+}
+
+.sets_buy {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media (min-width: $desktop-width) {
+        column-gap: 10px;
+        width: 450px;
+    }
+}
+
+.sets_link {
+    letter-spacing: 0.2rem;
+    z-index: 1;
+}

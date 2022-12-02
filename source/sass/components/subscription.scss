@@ -1,0 +1,101 @@
+.subscription {
+    padding: 95px 0 50px;
+    color: $white-color;
+    background-color: $grey-color;
+    background: no-repeat url('../img/background/sub.jpg');
+    background-size: 100%;
+    background-position: center;
+    
+
+    @media (min-resolution: 2dppx) {
+        background: no-repeat url('../img/background/sub@2x.jpg');
+    }
+
+    @media (min-width: $tablet-width) {
+        padding-top: 250px;
+        min-height: 660px;
+        background: no-repeat url('../img/background/sub-desktop.jpg');
+        background-size: cover;
+        background-position-x: 50%;
+
+        @media (min-resolution: 2dppx) {
+            background: no-repeat url('../img/background/sub-desktop@2x.jpg');
+            background-size: cover;
+            background-position-x: 50%;
+        }
+    }
+}
+
+.subscription_subtitle {
+    margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+        text-align: center;
+    }
+}
+
+.subscription_title {
+    margin-bottom: 35px;
+    padding-right: 15px;
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    @media (min-width: $tablet-width) {
+        text-align: center;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 77px;
+        margin-bottom: 30px;
+        padding-right: 0;
+    }
+}
+
+.subscription_form {
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.subscription_input {
+    width: 100%;
+    margin-bottom: 32px;
+    padding: 16px 28px;
+    background: $white-color;
+    border: 1px solid #F4F1F1;
+
+    &::placeholder {
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: $darkgrey-color;
+    }
+
+    &:focus {
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        color: $primary-color;
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 333px;
+        margin-bottom: 0;
+    }
+}
+
+.subscription_button {
+
+    @media (min-width: $tablet-width) {
+        width: max-content;
+    }
+}
+

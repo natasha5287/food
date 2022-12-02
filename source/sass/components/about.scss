@@ -1,0 +1,194 @@
+.about {
+    padding-bottom: 30px;
+
+    @media (min-width: $desktop-width)  {
+        padding-bottom: 0;
+    }
+}
+
+.about_list {
+    @media (min-width: $tablet-width) {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+        max-width: unset;
+        margin: 0;
+    }
+}
+
+.about_item {
+
+    @media (min-width: $desktop-width) {
+        min-height: 640px;
+        display: flex;
+        justify-content: flex-start;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.about_box {
+    padding: 40px 20px;
+    line-height: 26px;
+
+    @media (min-width: $desktop-width) {
+       width: 785px;
+       align-self: center;
+       
+       padding-left: 155px;
+       padding-right: 135px;
+    }
+}
+
+.about_title {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 28px;
+    text-transform: uppercase;
+    opacity: 0.86;
+    
+    @media (min-width: $desktop-width) {
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+
+.about_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 180px;
+    margin: 0 20px;
+    background-image: url("../img/background/about-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+        background: no-repeat url('../img/background/about-01@2x.jpg');
+        background-size: cover;
+    }
+    
+
+    &-second {
+        background-image: url("../img/background/about-02.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background: no-repeat url('../img/background/about-02@2x.jpg');
+            background-size: cover;
+        }
+    }
+
+    &-third {
+        background-image: url("../img/background/about-03.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background: no-repeat url('../img/background/about-03@2x.jpg');
+            background-size: cover;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0;
+        min-width: 785px;
+        background-image: url("../img/background/about-desktop01.jpg");
+
+        @media (min-resolution: 2dppx) {
+            background: no-repeat url('../img/background/about-desktop01@2x.jpg');
+            background-size: cover;
+        }
+
+        &-second {
+            min-height: 820px;
+            background-image: url("../img/background/about-desktop02.jpg");
+    
+            @media (min-resolution: 2dppx) {
+                background: no-repeat url('../img/background/about-desktop02@2x.jpg');
+                background-size: cover;
+            }
+        }
+
+        &-third {
+            background-image: url("../img/background/about-desktop03.jpg");
+    
+            @media (min-resolution: 2dppx) {
+                background: no-repeat url('../img/background/about-desktop03@2x.jpg');
+                background-size: cover;
+            }
+        }
+    }
+}
+
+.about_back-l {
+    @media (min-width: $desktop-width) {
+        width: 1135px;
+    }
+}
+
+.about_goals {
+    padding-top: 10px;
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: num; /* Задаём имя счетчика */
+}
+
+.about_goal {
+    position: relative;
+    min-height: 65px;
+    margin-bottom: 20px;
+    padding-left: 65px;
+
+    &::before {
+        position: absolute;
+        content:"0" counter(num) ; /* Выводим число */
+        counter-increment: num; /* Увеличиваем значение счётчика */
+        font-family: "Montserrat", Arial, sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        opacity: 0.86;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $grey-color;
+        top: 0;
+        left: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 42px;
+        padding-left: 70px;
+    }
+}
+
+.about_goal:not(:last-child)::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    top: 0;
+    bottom: -25px;
+    left: 15px;
+    background-color: $grey-color;
+    
+    @media (min-width: $desktop-width) {
+        bottom: -50px;
+    }
+}
+
+.about_goal:last-child {
+    margin-bottom: 0;
+}
+
+.about_logo {
+
+    @media (min-width: $desktop-width) {
+        width: 480px;
+        height: 480px;
+    }
+}

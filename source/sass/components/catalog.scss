@@ -1,0 +1,17 @@
+.catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+
+    @media (min-width: $desktop-width) {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 40px;
+        column-gap: 65px;
+    }
+}
+
+.catalog_item {
+    display: flex;
+    justify-content: center;
+}

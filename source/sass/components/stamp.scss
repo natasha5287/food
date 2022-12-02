@@ -1,0 +1,26 @@
+.stamp {
+    font-weight: 700;
+    font-size: 9px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    color: $white-color;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        font-size: 12px;
+        min-width: 58px;
+    }
+}
+
+.stamp-top {
+    background-color: $green-color;
+}
+
+.stamp-sale {
+    background-color: #EB5757;
+}
+
+.stamp-new {
+    background-color: $primary-color;
+}

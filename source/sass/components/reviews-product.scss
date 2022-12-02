@@ -1,0 +1,116 @@
+.reviews-product {
+    position: relative;
+    margin-bottom: 35px;
+    padding: 32px 0;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        background-color: #D9D9D9;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-top: 45px;
+        margin-bottom: 30px;
+    }
+}
+
+.reviews-product_item {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 15px;
+    margin-bottom: 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 40px;
+
+        &:nth-child(2) {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.reviews-product_item:nth-child(3) {
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
+}
+
+
+
+.reviews-product_title {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+
+    @media (min-width: $desktop-width) {
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+}
+
+.reviews-product_box {
+    @media (min-width: $desktop-width) {
+        position: relative;
+    }
+}
+
+.reviews-product_name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 10px;
+    }
+}
+
+.reviews-product_rating {
+    display: flex;
+    gap: 7px;
+    margin-bottom: 5px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 6px;
+    }
+}
+
+.reviews-product_star {
+    vertical-align: middle;
+    fill: #C5C5C5;
+}
+
+.reviews-product_star-active {
+    fill: #FFB543;
+}
+
+.reviews-product_text {
+    margin-bottom: 20px;
+    line-height: 26px;
+    color: #7A7A7A;
+
+    @media (min-width: $desktop-width) {
+        padding-right: 20px;
+        font-size: 14px;
+    }
+}
+
+.reviews-product_time {
+    color: $lightgrey-color;
+
+    @media (min-width: $desktop-width) {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

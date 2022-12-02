@@ -1,0 +1,87 @@
+.advice {
+    padding: 60px 0 50px;
+    color: $white-color;
+    background-color: $grey-color;
+    background: no-repeat url('../img/background/advice.jpg');
+    background-size: 100%;
+   
+    
+
+    @media (min-resolution: 2dppx) {
+        background: no-repeat url('../img/background/advice@2x.jpg');
+        background-size: 100%;
+    }
+
+    @media (min-width: $tablet-width) {
+        min-height: 660px;
+        padding: 185px 0 125px;
+        background: no-repeat url('../img/background/advice-desktop.jpg');
+        background-size: cover;
+        background-position-x: 50%;
+
+        @media (min-resolution: 2dppx) {
+            background: no-repeat url('../img/background/advice-desktop@2x.jpg');
+            background-size: cover;
+            background-position-x: 50%;
+        }
+    }
+}
+
+.advice_wrap {
+    @media (min-width: $tablet-width) {
+        text-align: center;
+    }
+}
+
+.advise_subtitle {
+    margin-bottom: 15px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 10px;
+        letter-spacing: 0.58rem;
+    }
+}
+
+.advice_title {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 60px;
+        font-size: 64px;
+    }
+}
+
+.advice_form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @media (min-width: $tablet-width) {
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+.advice_input {
+    border: transparent;
+    &::placeholder {
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: $darkgrey-color;
+        text-align: center;
+    }
+
+    &:focus {
+        font-family: "Montserrat", "Arial", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        color: $primary-color;
+    }
+}

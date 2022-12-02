@@ -1,0 +1,57 @@
+.text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 90px;
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+        font-size: 32px;
+        line-height: 75px;
+    }
+}
+
+.text-s {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    @media (min-width: $desktop-width) {
+        font-size: 16px;
+        letter-spacing: 0.68em;
+    }
+}
+
+.text-l {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    @media (min-width: $desktop-width) {
+        font-size: 64px;
+        line-height: 77px;
+    }
+}
+
+.text-card {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 18px;
+    }
+}
+
+.text-green {
+    color: $green-color;
+    word-wrap: break-word;
+}

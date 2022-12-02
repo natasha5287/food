@@ -1,0 +1,159 @@
+.contacts {
+    padding: 40px 20px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}
+
+.contacts_wrap {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+        order: 2;
+        padding: 50px;
+        width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-left: 95px;
+        padding-top: 120px;
+    }
+}
+
+.contacts_title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #121212;
+    opacity: 0.86;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 50px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 58px;
+    }
+}
+
+.contacts_phone {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $primary-color;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.contacts_mail {
+    margin-bottom: 30px;
+    padding: 0 5px;
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $primary-color;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+    text-decoration-color: $primary-color;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 45px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-underline-offset: 12px;
+    }
+}
+
+.contacts_question {
+    max-width: 320px;
+    min-height: 60px;
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    @media (min-width: $desktop-width) {
+        max-width: max-content;
+        margin-bottom: 35px;
+        padding: 15px 22px;
+    }
+}
+
+.contacts_social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+
+    @media (min-width: $desktop-width) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        padding-left: 5px;
+    }
+}
+
+.contacts_link {
+    display: block;
+
+    @media (min-width: $desktop-width)  {
+        display: flex;
+        column-gap: 12px;
+        justify-content: flex-start;
+        width: auto;
+    }
+}
+
+.contacts_box {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        color: #1877F2;
+
+        &-gradient {
+            background: linear-gradient(180deg, #EE2183 0%, #FF8D54 100%);
+            background-clip: text;
+            color: transparent;
+        }
+    }
+}
+
+.contacts_cite {
+    font-weight: 400;
+}
+
+.contacts_username {
+    font-weight: 700;
+}
+
+.contacts_map {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+    width: 45%;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 880px;
+    }
+}

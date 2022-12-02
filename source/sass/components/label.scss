@@ -1,0 +1,20 @@
+.label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    color: #383838;
+
+    @media (min-width: $desktop-width) {
+        font-size: 16px;
+    }
+}
+
+.label:has(.input-s)  {
+
+    @media (min-width: $desktop-width) {
+        grid-column: 1/3;
+    }
+    
+}
