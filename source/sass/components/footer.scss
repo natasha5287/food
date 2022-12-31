@@ -55,6 +55,7 @@
     font-weight: 600;
     text-transform: uppercase;
     color: $darkgrey-color;
+    transition:  color 0.3s ease-in-out;
 
     &:hover {
         color: $green-color;
@@ -93,9 +94,18 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
+    transition: color 0.3s ease-in-out, stroke 0.3s ease-in-out;
 
-  &:hover .footer_icon {
+    &:hover .footer_icon {
         stroke: $green-color;
+    }
+
+    &:hover .footer_mail {
+        color: $green-color;
+    }
+
+    &:hover .footer_phone  {
+        color: $green-color;
     }
 
     @media (min-width: $desktop-width) {
@@ -114,19 +124,21 @@
 .footer_mail {
     font-style: normal;
     color: $darkgrey-color;
+    // transition: color 0.3s ease-in-out;
 
-    &:hover {
-        color: $green-color;
-    }
+    // &:hover {
+    //     color: $green-color;
+    // }
 }
 
 .footer_phone {
     font-style: normal;
     color: $darkgrey-color; 
+    // transition: color 0.3s ease-in-out;
 
-    &:hover {
-        color: $green-color;
-    }
+    // &:hover {
+    //     color: $green-color;
+    // }
 }
 
 .footer_text {

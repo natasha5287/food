@@ -39,6 +39,7 @@
 }
 
 .header_logo {
+    transition: opacity 0.3s ease-in-out;
     &:hover {
         opacity: 0.4;
     }
@@ -100,7 +101,7 @@
 
 .header_box {
     display: none;
-    padding: 30px 20px;
+    padding: 30px 20px 50px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -170,6 +171,7 @@
     color: $darkgrey-color;
     text-align: center;
     opacity: 0.4;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
         color: $green-color;

@@ -3,6 +3,9 @@
     min-width: 160px;
     min-height: 260px;
     padding: 10px 9px;
+    outline-offset: -5px;
+    outline: 5px solid transparent;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out ;
 
     &:hover {
         background-color: #f4f4f4;

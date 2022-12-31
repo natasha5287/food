@@ -71,6 +71,7 @@
     position: relative;
     display: flex;
     justify-content: flex-start;
+    
 
     &:hover .nav_icon {
         stroke: $green-color;
@@ -81,6 +82,7 @@
     stroke-width: 2;
     stroke: $darkgrey-color;
     margin-right: 25px;
+    transition: stroke 0.3s ease-in-out;
 
     @media (min-width: $desktop-width) {
         margin: 0;

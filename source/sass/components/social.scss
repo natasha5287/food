@@ -23,6 +23,7 @@
 .social_icon {
     fill: $darkgrey-color;
     opacity: 0.4;
+    transition: fill 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .socila_icon-facebook {
