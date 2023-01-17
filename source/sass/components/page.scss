@@ -1,9 +1,10 @@
-.page-header, 
+.page-header,
 .page-footer {
     flex-grow: 0;
     flex-shrink: 0;
 }
 
 .page-body {
+    margin-top: 143px;
     flex-grow: 1;
 }

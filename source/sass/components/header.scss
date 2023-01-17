@@ -1,8 +1,12 @@
 .header {
+    position: fixed;
+    width: 100vw;
+    z-index: 5;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
     @media (min-width: $desktop-width) {
-        margin-bottom: 105px;
         background: linear-gradient(180deg, #f6f6f6 42px, #ffffff 42px);
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
 }
 
@@ -17,7 +21,7 @@
     @media (min-width: $tablet-width) {
         padding: 0 50px;
     }
-        
+
     @media (min-width: $desktop-width) {
         display: flex;
         max-width: 1590px;
@@ -35,18 +39,15 @@
     @media (min-width: $desktop-width) {
         padding: 0;
         align-items: flex-end;
+        margin-right: 210px;
     }
 }
 
 .header_logo {
-    transition: opacity 0.3s ease-in-out;
-    &:hover {
-        opacity: 0.4;
-    }
 
     @media (min-width: $desktop-width) {
-        width: 335px;
-      }
+        width: 130px;
+    }
 }
 
 .header-open {
@@ -162,6 +163,13 @@
     }
 }
 
+.header_wrapper {
+    @media (min-width: $desktop-width) {
+        grid-area: 2/2/3/3;
+        margin-top: auto;
+    }
+}
+
 .header_phone {
     display: block;
     margin-bottom: 20px;
@@ -193,7 +201,7 @@
     gap: 30px;
 
     @media (min-width: $desktop-width) {
-        grid-area: 1/2/2/3;
+        grid-area: 1/1/2/3;
         justify-content: flex-end;
         align-self: center;
         gap: 10px;
