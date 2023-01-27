@@ -1,10 +1,12 @@
+.paper {
+    &:hover {
+        outline: 5px solid $green-color;
+        background-color: #F4F4F4;
+    }
+}
+
 .paper_link {
     color: $primary-color;
-
-    // &:hover {
-    //     border: 5px solid $green-color;
-    //     background-color: #F4F4F4;
-    // }
 
     @media (min-width: $desktop-width) {
         display: grid;
@@ -66,7 +68,7 @@
 
 .paper_box {
     display: flex;
-    justify-content: space-between;
+    column-gap: 45px;
 
     @media (min-width: $desktop-width) {
         flex-direction: column;
@@ -102,4 +104,3 @@
     margin-right: 10px;
     margin-top: 4px;
 }
-

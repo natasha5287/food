@@ -10,13 +10,11 @@
     }
 
     @media (min-width: $tablet-width) {
-        padding-top: 5px;
-        padding-bottom: 0;
+        padding: 30px 50px;
         background: no-repeat url('../img/background/promo-desktop.png');
         background-size: cover;
 
         @media (min-resolution: 2dppx) {
-            min-height: 580px;
             background: no-repeat url('../img/background/promo-desktop@2x.png');
             background-size: cover;
         }

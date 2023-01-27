@@ -1,14 +1,14 @@
-.active {
+.activelife {
     position: relative;
     padding-bottom: 65px;
 
     @media (min-width: $desktop-width) {
-        margin-bottom: 35px;
+        padding-bottom: 100px;
     }
 
 }
 
-.active_box {
+.activelife_box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -23,7 +23,7 @@
     }
 }
 
-.active_subtitle {
+.activelife_subtitle {
     margin-bottom: 15px;
 
     @media (min-width: $desktop-width) {
@@ -31,13 +31,13 @@
     }
 }
 
-.active_name {
+.activelife_name {
     @media (min-width: $desktop-width) {
         margin-bottom: 10px;
     }
 }
 
-.active_photo {
+.activelife_photo {
     @media (min-width: $desktop-width) {
         position: absolute;
         right: 0;
@@ -45,7 +45,7 @@
     }
 }
 
-.active_img {
+.activelife_img {
     display: block;
     margin-bottom: 35px;
 
@@ -55,7 +55,7 @@
     }
 }
 
-.active_description {
+.activelife_description {
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 26px;
@@ -66,7 +66,7 @@
     }
 }
 
-.active_link {
+.activelife_link {
     font-size: 14px;
     width: 100%;
     z-index: 1;

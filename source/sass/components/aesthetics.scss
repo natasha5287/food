@@ -4,24 +4,26 @@
     color: $white-color;
     background: linear-gradient(270.74deg, #88929E 6.57%, #5B6773 99.08%);
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         display: flex;
-        margin-bottom: 105px;
+        align-items: center;
     }
-}
-
-.aesthetics_wrap {
-    display: none;
 
     @media (min-width: $desktop-width) {
-        display: block;
-        width: 780px;
+        margin-bottom: 100px;
     }
 }
 
 .aesthetics_desktop {
-    @media (min-width: $desktop-width) {
+    display: none;
+
+    @media (min-width: $desktop-s-width) {
         display: block;
+    }
+
+    @media (min-width: $desktop-s-width) {
+        display: block;
+        width: 780px;
     }
 }
 
@@ -33,8 +35,12 @@
     margin: 0 auto;
     padding: 55px 20px 70px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         padding-bottom: 0;
+        margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
         margin-left: 165px;
     }
 }

@@ -6,12 +6,12 @@
     color: rgba(91, 103, 115, 0.4);
     opacity: 0.1;
     overflow: hidden;
+    width: calc(100% - 10px);
     left: 5px;
+    right: 5px;
     bottom: 120px;
 
     @media (min-width: $tablet-width) {
-        right: 0;
-        left: auto;
         bottom: 100px;
     }
 
@@ -20,6 +20,7 @@
         font-size: 268px;
         left: 40%;
         bottom: 0;
+        width: auto;
     }
 }
 

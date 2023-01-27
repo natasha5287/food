@@ -5,21 +5,35 @@
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: $primary-color;
+    flex-grow: 0;
+    flex-shrink: 0;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         padding-top: 55px;
+    }
+}
+
+.footer_container {
+    padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+        padding: 0 50px;
+    }
+
+    @media (min-width: $desktop-s-width) {
+        max-width: 1590px;
+        margin: 0 auto;
     }
 }
 
 .footer_wrap {
     margin-bottom: 35px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 45px;
-        padding-right: 145px;
     }
 }
 
@@ -45,8 +59,12 @@
         justify-content: flex-start;
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         justify-content: flex-end;
+        column-gap: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
         column-gap: 68px;
     }
 }
@@ -55,7 +73,7 @@
     font-weight: 600;
     text-transform: uppercase;
     color: $darkgrey-color;
-    transition:  color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 
     &:hover {
         color: $green-color;
@@ -68,19 +86,18 @@
 
 .footer_box {
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         margin-bottom: 55px;
-        padding-right: 145px;
     }
 }
 
 .footer_contacts {
     margin-bottom: 38px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         display: flex;
         justify-content: flex-end;
         flex-wrap: wrap;
@@ -104,7 +121,7 @@
         color: $green-color;
     }
 
-    &:hover .footer_phone  {
+    &:hover .footer_phone {
         color: $green-color;
     }
 
@@ -124,21 +141,11 @@
 .footer_mail {
     font-style: normal;
     color: $darkgrey-color;
-    // transition: color 0.3s ease-in-out;
-
-    // &:hover {
-    //     color: $green-color;
-    // }
 }
 
 .footer_phone {
     font-style: normal;
-    color: $darkgrey-color; 
-    // transition: color 0.3s ease-in-out;
-
-    // &:hover {
-    //     color: $green-color;
-    // }
+    color: $darkgrey-color;
 }
 
 .footer_text {
@@ -149,17 +156,16 @@
     margin-bottom: 30px;
     gap: 20px;
 
-    @media (min-width: $desktop-width) {
-        margin-left: 125px;
+    @media (min-width: $desktop-s-width) {
+        margin-left: 70px;
         margin-bottom: 0;
     }
 }
 
 .footer_wrapper {
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         display: flex;
         justify-content: space-between;
-        padding: 0 145px;
     }
 }
 
@@ -169,7 +175,7 @@
     gap: 25px;
     margin-bottom: 25px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         order: 2;
     }
 }

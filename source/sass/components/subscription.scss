@@ -5,10 +5,11 @@
     background: no-repeat url('../img/background/sub.jpg');
     background-size: 100%;
     background-position: center;
-    
+
 
     @media (min-resolution: 2dppx) {
         background: no-repeat url('../img/background/sub@2x.jpg');
+        background-size: 100%;
     }
 
     @media (min-width: $tablet-width) {
@@ -98,4 +99,3 @@
         width: max-content;
     }
 }
-

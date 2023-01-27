@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <header class="header header-inner page-header">
+    <header class="header header-inner">
         <div class="header_container">
         <div class="header_wrap">
             <a class="header_logo" href="index.html">
@@ -55,6 +55,11 @@
                     </li>
                     
                 </ul>
+
+                <div class="header_wrapper">
+                    <a class="header_phone" href="tel:79261716766">+7 926 171 67 66</a>
+                </div>
+                
                 <ul class="nav_list nav_list-user">
                     <li class="nav_item">
                         <a class="nav_link nav_link-user" href="favourite.html">
@@ -66,7 +71,7 @@
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a class="nav_link nav_link-user" href="basket.html">
+                        <a class="nav_link nav_link-user popup_link" href="basket.html">
                             <svg class="nav_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
                                 <use xlink:href="./img/sprite.svg#trolley"></use>
                             </svg>
@@ -76,28 +81,28 @@
                     </li>
                 </ul>
             </nav>
-            <a class="header_phone" href="tel:79261716766">+7 926 171 67 66</a>
+          
             <ul class="header_social social">
                 <li class="social_item">
-                    <a class="social_link social_link-m" href="https://www.facebook.com/">
+                    <a class="social_link" href="https://www.facebook.com/">
                         <span class="visually-hidden">Facebook</span>
-                        <svg class="social_icon socila_icon-facebook" aria-hidden="true" viewBox="0 0 10 18" width="10" height="18">
+                        <svg class="social_icon social_icon-m" aria-hidden="true" viewBox="0 0 10 18" width="10" height="18">
                             <use xlink:href="./img/sprite.svg#facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social_item">
-                    <a class="social_link social_link-m" href="https://www.instagram.com/">
+                    <a class="social_link" href="https://www.instagram.com/">
                         <span class="visually-hidden">Instagram</span>
-                        <svg class="social_icon socila_icon-instagram" aria-hidden="true" viewBox="0 0 18 18" width="18" height="18">
+                        <svg class="social_icon social_icon-m" aria-hidden="true" viewBox="0 0 18 18" width="18" height="18">
                             <use xlink:href="./img/sprite.svg#instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social_item">
-                    <a class="social_link social_link-m" href="https://twitter.com/">
+                    <a class="social_link" href="https://twitter.com/">
                         <span class="visually-hidden">Twitter</span>
-                        <svg class="social_icon socila_icon-twitter" aria-hidden="true" viewBox="0 0 18 16" width="18" height="16">
+                        <svg class="social_icon social_icon-m" aria-hidden="true" viewBox="0 0 18 16" width="18" height="16">
                             <use xlink:href="./img/sprite.svg#twitter"></use>
                         </svg>
                     </a>
@@ -413,8 +418,8 @@
 
     </main>
 
-    <footer class="footer page-footer">
-        <div class="container">
+    <footer class="footer">
+        <div class="footer_container">
         <div class="footer_wrap">
             <a href="index.html">
                 <picture>
@@ -529,6 +534,100 @@
         </div>
         </div>
     </footer>
+
+    <div class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <div class="popup_wrapper">
+                    <h2 class="popup_title">Корзина</h2>
+                    <button class="popup_close" type="button">
+                        <span class="visually-hidden">Закрыть окно</span>
+                    </button>
+                </div>
+                <ul class="popup_list">
+                    <li class="popup_card">
+                        <div class="popup_photo">
+                            <img src="./img/preview.jpg" width="60" height="60" alt="">
+                        </div>
+                        <div class="popup_wrap">
+                            <div class="popup_box">
+                                <h3 class="popup_subtitle">Detox набор</h3>
+                                <button class="basket_remove button" type="button">
+                                    <span class="visually-hidden">Удалить товар из
+                                        корзины</span>
+                                    <svg aria-hidden="true" viewBox="0 0 16 18" width="16" height="18">
+                                        <use class="basket_icon" xlink:href="./img/sprite.svg#bin">
+                                        </use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="popup_text">Sorbent + Antifungal</p>
+                            <div class="popup_box">
+                                <div class="basket_count">
+                                    <button class="popup_button basket_button-decrease button" type="button">
+                                        <span class="visually-hidden">Уменьшить количество
+                                            товара</span>
+                                    </button>
+                                    <input class="input input-quantity input-quantity-s" type="number" min="1" max="100"
+                                        value="1">
+                                    <button class="popup_button basket_button-increase button" type="button">
+                                        <span class="visually-hidden">Увеличить количество
+                                            товара</span>
+                                    </button>
+                                </div>
+                                <span class="popup_price">790₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="popup_card">
+                        <div class="popup_photo">
+                            <img src="./img/preview.jpg" width="60" height="60" alt="">
+                        </div>
+                        <div class="popup_wrap">
+                            <div class="popup_box">
+                                <h3 class="popup_subtitle">Вечерний чай Aksam detox</h3>
+                                <button class="basket_remove button" type="button">
+                                    <span class="visually-hidden">Удалить товар из
+                                        корзины</span>
+                                    <svg aria-hidden="true" viewBox="0 0 16 18" width="16" height="18">
+                                        <use class="basket_icon" xlink:href="./img/sprite.svg#bin">
+                                        </use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="popup_text">Сбор на основе сенны, с мягким слабительным действием, направленным на
+                                предотвращение вздутия и запоров.</p>
+                            <div class="popup_box">
+                                <div class="basket_count">
+                                    <button class="popup_button basket_button-decrease button" type="button">
+                                        <span class="visually-hidden">Уменьшить количество
+                                            товара</span>
+                                    </button>
+                                    <input class="input input-quantity input-quantity-s" type="number" min="1" max="100"
+                                        value="1">
+                                    <button class="popup_button basket_button-increase button" type="button">
+                                        <span class="visually-hidden">Увеличить количество
+                                            товара</span>
+                                    </button>
+                                </div>
+                                <span class="popup_price">790₽</span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="popup_wrapper">
+                    <p class="popup_sum">Сумма</p>
+                    <p class="popup_total">1580₽</p>
+                </div>
+                <a class="popup_checkout button button-border" href="">Оформить заказ</a>
+                <a class="popup_basket button button-border" href="basket.html">Корзина</a>
+                <div class="popup_note">Добавьте товаров еще на <b>420₽</b> и Вам станет доступна <b>бесплатная
+                        доставка</b>
+                </div>
+            </div>
+        </div>
+    </div>
    
     <script src="scripts/main.min.js" type="module"></script>
     

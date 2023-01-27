@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,103 +9,112 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Food by  BCG</title>
+    <title>Food by BCG</title>
 </head>
 
 <body>
 
-    <header class="header header-inner page-header">
+    <header class="header header-inner">
         <div class="header_container">
-        <div class="header_wrap">
-            <a class="header_logo" href="index.html">
-                <img src="img/logo-header.png" srcset="img/logo-header@2x.png 2x" width="130" height="66" alt="Логотип компании Food by BCG">
-            </a>
-            <button class="header-open" type="button">
-                <span class="visually-hidden">Открыть меню</span>
-            </button>
-        </div>
-        <div class="header_box">
-            <div class="header_lang">
-                <button class="header_button " type="button">ru</button>
-                <button class="header_button header_button-active" type="button">en</button>
-                <button class="header-close" type="button">
-                    <span class="visually-hidden">Закрыть меню</span>
+            <div class="header_wrap">
+                <a class="header_logo" href="index.html">
+                    <img src="img/logo-header.png" srcset="img/logo-header@2x.png 2x" width="130" height="66"
+                        alt="Логотип компании Food by BCG">
+                </a>
+                <button class="header-open" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
                 </button>
             </div>
-            <nav class="nav">
-                <ul class="nav_list nav_list-main">
-                    <li class="nav_item">
-                        <a class="nav_link" href="index.html">Главная</a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="catalog.html">Товары</a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="questions.html">Q&A</a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="">Статьи</a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="about.html">О нас</a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="delivery.html">Оплата и доставка</a>
-                    </li>
-                    <li class="nav_item">
-                        <a class="nav_link" href="contacts.html">Контакты</a>
-                    </li>
-                    
-                </ul>
-                <ul class="nav_list nav_list-user">
-                    <li class="nav_item">
-                        <a class="nav_link nav_link-user" href="favourite.html">
-                            <svg class="nav_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
-                                <use xlink:href="./img/sprite.svg#heart"></use>
+            <div class="header_box">
+                <div class="header_lang">
+                    <button class="header_button " type="button">ru</button>
+                    <button class="header_button header_button-active" type="button">en</button>
+                    <button class="header-close" type="button">
+                        <span class="visually-hidden">Закрыть меню</span>
+                    </button>
+                </div>
+                <nav class="nav">
+                    <ul class="nav_list nav_list-main">
+                        <li class="nav_item">
+                            <a class="nav_link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="catalog.html">Товары</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="questions.html">Q&A</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link nav_link-active" href="">Статьи</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="about.html">О нас</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="delivery.html">Оплата и доставка</a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link" href="contacts.html">Контакты</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="header_wrapper">
+                        <a class="header_phone" href="tel:79261716766">+7 926 171 67 66</a>
+                    </div>
+
+                    <ul class="nav_list nav_list-user">
+                        <li class="nav_item">
+                            <a class="nav_link nav_link-user" href="favourite.html">
+                                <svg class="nav_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                    <use xlink:href="./img/sprite.svg#heart"></use>
+                                </svg>
+                                <span class="nav_count">9</span>
+                                <span class="nav_text">Сохраненное</span>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a class="nav_link nav_link-user popup_link" href="basket.html">
+                                <svg class="nav_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                    <use xlink:href="./img/sprite.svg#trolley"></use>
+                                </svg>
+                                <span class="nav_count">4</span>
+                                <span class="nav_text">Корзина</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="header_social social">
+                    <li class="social_item">
+                        <a class="social_link" href="https://www.facebook.com/">
+                            <span class="visually-hidden">Facebook</span>
+                            <svg class="social_icon social_icon-m" aria-hidden="true" viewBox="0 0 10 18" width="10"
+                                height="18">
+                                <use xlink:href="./img/sprite.svg#facebook"></use>
                             </svg>
-                            <span class="nav_count">9</span>
-                            <span class="nav_text">Сохраненное</span>
                         </a>
                     </li>
-                    <li class="nav_item">
-                        <a class="nav_link nav_link-user" href="basket.html">
-                            <svg class="nav_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
-                                <use xlink:href="./img/sprite.svg#trolley"></use>
+                    <li class="social_item">
+                        <a class="social_link" href="https://www.instagram.com/">
+                            <span class="visually-hidden">Instagram</span>
+                            <svg class="social_icon social_icon-m" aria-hidden="true" viewBox="0 0 18 18" width="18"
+                                height="18">
+                                <use xlink:href="./img/sprite.svg#instagram"></use>
                             </svg>
-                            <span class="nav_count">4</span>
-                            <span class="nav_text">Корзина</span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a class="social_link" href="https://twitter.com/">
+                            <span class="visually-hidden">Twitter</span>
+                            <svg class="social_icon social_icon-m" aria-hidden="true" viewBox="0 0 18 16" width="18"
+                                height="16">
+                                <use xlink:href="./img/sprite.svg#twitter"></use>
+                            </svg>
                         </a>
                     </li>
                 </ul>
-            </nav>
-            <a class="header_phone" href="tel:79261716766">+7 926 171 67 66</a>
-            <ul class="header_social social">
-                <li class="social_item">
-                    <a class="social_link social_link-m" href="https://www.facebook.com/">
-                        <span class="visually-hidden">Facebook</span>
-                        <svg class="social_icon socila_icon-facebook" aria-hidden="true" viewBox="0 0 10 18" width="10" height="18">
-                            <use xlink:href="./img/sprite.svg#facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social_item">
-                    <a class="social_link social_link-m" href="https://www.instagram.com/">
-                        <span class="visually-hidden">Instagram</span>
-                        <svg class="social_icon socila_icon-instagram" aria-hidden="true" viewBox="0 0 18 18" width="18" height="18">
-                            <use xlink:href="./img/sprite.svg#instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="social_item">
-                    <a class="social_link social_link-m" href="https://twitter.com/">
-                        <span class="visually-hidden">Twitter</span>
-                        <svg class="social_icon socila_icon-twitter" aria-hidden="true" viewBox="0 0 18 16" width="18" height="16">
-                            <use xlink:href="./img/sprite.svg#twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
+            </div>
         </div>
     </header>
 
@@ -133,13 +143,17 @@
                         <span class="paper_stamp stamp stamp-top">Top</span>
                         <time class="paper_time" datetime="2022-09-25">25/09/2022</time>
                         <picture>
-                            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/article-desktop-01.webp 1x, ./img/article-desktop-01@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-01.webp 1x, ./img/article-desktop-01@2x.webp 2x">
                             <source type="image/webp" srcset="./img/article-01.webp 1x, ./img/article-01@2x.webp 2x">
-                            <source media="(min-width: 1920px)" srcset="./img/article-desktop-01.jpg 1x, ./img/article-desktop-01@2x.jpg 2x">
-                            <img class="paper_img" src="./img/article-01.jpg" srcset="./img/article-01@2x" width="320" height="125" alt="">
+                            <source media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-01.jpg 1x, ./img/article-desktop-01@2x.jpg 2x">
+                            <img class="paper_img" src="./img/article-01.jpg" srcset="./img/article-01@2x" width="320"
+                                height="125" alt="">
                         </picture>
                         <div class="paper_box">
-                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это сложный медицинский вопрос, труебующий </p>
+                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это
+                                сложный медицинский вопрос, труебующий </p>
                             <svg class="paper_icon" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
                                 <use xlink:href="./img/sprite.svg#arrow-big"></use>
                             </svg>
@@ -147,18 +161,22 @@
                     </a>
                 </li>
                 <li class="news_item paper">
-                    <a class="paper_link" href="">
+                    <a class="paper_link" href="article.html">
                         <h2 class="paper_title">4 главных витамина</h2>
                         <span class="paper_stamp stamp stamp-top">Top</span>
                         <time class="paper_time" datetime="2022-09-25">25/09/2022</time>
                         <picture>
-                            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/article-desktop-02.webp 1x, ./img/article-desktop-02@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-02.webp 1x, ./img/article-desktop-02@2x.webp 2x">
                             <source type="image/webp" srcset="./img/article-02.webp 1x, ./img/article-02@2x.webp 2x">
-                            <source media="(min-width: 1920px)" srcset="./img/article-desktop-02.jpg 1x, ./img/article-desktop-02@2x.jpg 2x">
-                            <img class="paper_img" src="./img/article-02.jpg" srcset="./img/article-02@2x" loading="lazy" width="320" height="125" alt="">
+                            <source media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-02.jpg 1x, ./img/article-desktop-02@2x.jpg 2x">
+                            <img class="paper_img" src="./img/article-02.jpg" srcset="./img/article-02@2x"
+                                loading="lazy" width="320" height="125" alt="">
                         </picture>
                         <div class="paper_box">
-                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это сложный медицинский вопрос, труебующий </p>
+                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это
+                                сложный медицинский вопрос, труебующий </p>
                             <svg class="paper_icon" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
                                 <use xlink:href="./img/sprite.svg#arrow-big"></use>
                             </svg>
@@ -166,18 +184,22 @@
                     </a>
                 </li>
                 <li class="news_item paper">
-                    <a class="paper_link" href="">
+                    <a class="paper_link" href="article.html">
                         <h2 class="paper_title">Что важнее для здоровья?</h2>
                         <span class="paper_stamp stamp stamp-top">Top</span>
                         <time class="paper_time" datetime="2022-09-25">25/09/2022</time>
                         <picture>
-                            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/article-desktop-03.webp 1x, ./img/article-desktop-03@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-03.webp 1x, ./img/article-desktop-03@2x.webp 2x">
                             <source type="image/webp" srcset="./img/article-03.webp 1x, ./img/article-03@2x.webp 2x">
-                            <source media="(min-width: 1920px)" srcset="./img/article-desktop-03.jpg 1x, ./img/article-desktop-03@2x.jpg 2x">
-                            <img class="paper_img" src="./img/article-03.jpg" srcset="./img/article-03@2x" loading="lazy" width="320" height="125" alt="">
+                            <source media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-03.jpg 1x, ./img/article-desktop-03@2x.jpg 2x">
+                            <img class="paper_img" src="./img/article-03.jpg" srcset="./img/article-03@2x"
+                                loading="lazy" width="320" height="125" alt="">
                         </picture>
                         <div class="paper_box">
-                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это сложный медицинский вопрос, труебующий </p>
+                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это
+                                сложный медицинский вопрос, труебующий </p>
                             <svg class="paper_icon" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
                                 <use xlink:href="./img/sprite.svg#arrow-big"></use>
                             </svg>
@@ -185,17 +207,21 @@
                     </a>
                 </li>
                 <li class="news_item paper">
-                    <a class="paper_link" href="">
+                    <a class="paper_link" href="article.html">
                         <h2 class="paper_title">Основы правильного питания</h2>
                         <time class="paper_time" datetime="2022-09-25">25/09/2022</time>
                         <picture>
-                            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/article-desktop-01.webp 1x, ./img/article-desktop-01@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-01.webp 1x, ./img/article-desktop-01@2x.webp 2x">
                             <source type="image/webp" srcset="./img/article-01.webp 1x, ./img/article-01@2x.webp 2x">
-                            <source media="(min-width: 1920px)" srcset="./img/article-desktop-01.jpg 1x, ./img/article-desktop-01@2x.jpg 2x">
-                            <img class="paper_img" src="./img/article-01.jpg" srcset="./img/article-01@2x" loading="lazy" width="320" height="125" alt="">
+                            <source media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-01.jpg 1x, ./img/article-desktop-01@2x.jpg 2x">
+                            <img class="paper_img" src="./img/article-01.jpg" srcset="./img/article-01@2x"
+                                loading="lazy" width="320" height="125" alt="">
                         </picture>
                         <div class="paper_box">
-                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это сложный медицинский вопрос, труебующий </p>
+                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это
+                                сложный медицинский вопрос, труебующий </p>
                             <svg class="paper_icon" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
                                 <use xlink:href="./img/sprite.svg#arrow-big"></use>
                             </svg>
@@ -203,17 +229,21 @@
                     </a>
                 </li>
                 <li class="news_item paper">
-                    <a class="paper_link" href="">
+                    <a class="paper_link" href="article.html">
                         <h2 class="paper_title">4 главных витамина</h2>
                         <time class="paper_time" datetime="2022-09-25">25/09/2022</time>
                         <picture>
-                            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/article-desktop-02.webp 1x, ./img/article-desktop-02@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-02.webp 1x, ./img/article-desktop-02@2x.webp 2x">
                             <source type="image/webp" srcset="./img/article-02.webp 1x, ./img/article-02@2x.webp 2x">
-                            <source media="(min-width: 1920px)" srcset="./img/article-desktop-02.jpg 1x, ./img/article-desktop-02@2x.jpg 2x">
-                            <img class="paper_img" src="./img/article-02.jpg" srcset="./img/article-02@2x" loading="lazy" width="320" height="125" alt="">
+                            <source media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-02.jpg 1x, ./img/article-desktop-02@2x.jpg 2x">
+                            <img class="paper_img" src="./img/article-02.jpg" srcset="./img/article-02@2x"
+                                loading="lazy" width="320" height="125" alt="">
                         </picture>
                         <div class="paper_box">
-                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это сложный медицинский вопрос, труебующий </p>
+                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это
+                                сложный медицинский вопрос, труебующий </p>
                             <svg class="paper_icon" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
                                 <use xlink:href="./img/sprite.svg#arrow-big"></use>
                             </svg>
@@ -221,17 +251,21 @@
                     </a>
                 </li>
                 <li class="news_item paper">
-                    <a class="paper_link" href="">
+                    <a class="paper_link" href="article.html">
                         <h2 class="paper_title">Что важнее для здоровья?</h2>
                         <time class="paper_time" datetime="2022-09-25">25/09/2022</time>
                         <picture>
-                            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/article-desktop-03.webp 1x, ./img/article-desktop-03@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-03.webp 1x, ./img/article-desktop-03@2x.webp 2x">
                             <source type="image/webp" srcset="./img/article-03.webp 1x, ./img/article-03@2x.webp 2x">
-                            <source media="(min-width: 1920px)" srcset="./img/article-desktop-03.jpg 1x, ./img/article-desktop-03@2x.jpg 2x">
-                            <img class="paper_img" src="./img/article-03.jpg" srcset="./img/article-03@2x" loading="lazy" width="320" height="125" alt="">
+                            <source media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-03.jpg 1x, ./img/article-desktop-03@2x.jpg 2x">
+                            <img class="paper_img" src="./img/article-03.jpg" srcset="./img/article-03@2x"
+                                loading="lazy" width="320" height="125" alt="">
                         </picture>
                         <div class="paper_box">
-                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это сложный медицинский вопрос, труебующий </p>
+                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это
+                                сложный медицинский вопрос, труебующий </p>
                             <svg class="paper_icon" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
                                 <use xlink:href="./img/sprite.svg#arrow-big"></use>
                             </svg>
@@ -239,17 +273,21 @@
                     </a>
                 </li>
                 <li class="news_item paper">
-                    <a class="paper_link" href="">
+                    <a class="paper_link" href="article.html">
                         <h2 class="paper_title">Основы правильного питания</h2>
                         <time class="paper_time" datetime="2022-09-25">25/09/2022</time>
                         <picture>
-                            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/article-desktop-01.webp 1x, ./img/article-desktop-01@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-01.webp 1x, ./img/article-desktop-01@2x.webp 2x">
                             <source type="image/webp" srcset="./img/article-01.webp 1x, ./img/article-01@2x.webp 2x">
-                            <source media="(min-width: 1920px)" srcset="./img/article-desktop-01.jpg 1x, ./img/article-desktop-01@2x.jpg 2x">
-                            <img class="paper_img" src="./img/article-01.jpg" srcset="./img/article-01@2x" loading="lazy" width="320" height="125" alt="">
+                            <source media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-01.jpg 1x, ./img/article-desktop-01@2x.jpg 2x">
+                            <img class="paper_img" src="./img/article-01.jpg" srcset="./img/article-01@2x"
+                                loading="lazy" width="320" height="125" alt="">
                         </picture>
                         <div class="paper_box">
-                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это сложный медицинский вопрос, труебующий </p>
+                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это
+                                сложный медицинский вопрос, труебующий </p>
                             <svg class="paper_icon" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
                                 <use xlink:href="./img/sprite.svg#arrow-big"></use>
                             </svg>
@@ -257,17 +295,21 @@
                     </a>
                 </li>
                 <li class="news_item paper">
-                    <a class="paper_link" href="">
+                    <a class="paper_link" href="article.html">
                         <h2 class="paper_title">4 главных витамина</h2>
                         <time class="paper_time" datetime="2022-09-25">25/09/2022</time>
                         <picture>
-                            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/article-desktop-02.webp 1x, ./img/article-desktop-02@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-02.webp 1x, ./img/article-desktop-02@2x.webp 2x">
                             <source type="image/webp" srcset="./img/article-02.webp 1x, ./img/article-02@2x.webp 2x">
-                            <source media="(min-width: 1920px)" srcset="./img/article-desktop-02.jpg 1x, ./img/article-desktop-02@2x.jpg 2x">
-                            <img class="paper_img" src="./img/article-02.jpg" srcset="./img/article-02@2x" loading="lazy" width="320" height="125" alt="">
+                            <source media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-02.jpg 1x, ./img/article-desktop-02@2x.jpg 2x">
+                            <img class="paper_img" src="./img/article-02.jpg" srcset="./img/article-02@2x"
+                                loading="lazy" width="320" height="125" alt="">
                         </picture>
                         <div class="paper_box">
-                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это сложный медицинский вопрос, труебующий </p>
+                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это
+                                сложный медицинский вопрос, труебующий </p>
                             <svg class="paper_icon" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
                                 <use xlink:href="./img/sprite.svg#arrow-big"></use>
                             </svg>
@@ -275,17 +317,21 @@
                     </a>
                 </li>
                 <li class="news_item paper">
-                    <a class="paper_link" href="">
+                    <a class="paper_link" href="article.html">
                         <h2 class="paper_title">Что важнее для здоровья?</h2>
                         <time class="paper_time" datetime="2022-09-25">25/09/2022</time>
                         <picture>
-                            <source type="image/webp" media="(min-width: 1920px)" srcset="./img/article-desktop-03.webp 1x, ./img/article-desktop-03@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-03.webp 1x, ./img/article-desktop-03@2x.webp 2x">
                             <source type="image/webp" srcset="./img/article-03.webp 1x, ./img/article-03@2x.webp 2x">
-                            <source media="(min-width: 1920px)" srcset="./img/article-desktop-03.jpg 1x, ./img/article-desktop-03@2x.jpg 2x">
-                            <img class="paper_img" src="./img/article-03.jpg" srcset="./img/article-03@2x" loading="lazy" width="320" height="125" alt="">
+                            <source media="(min-width: 1920px)"
+                                srcset="./img/article-desktop-03.jpg 1x, ./img/article-desktop-03@2x.jpg 2x">
+                            <img class="paper_img" src="./img/article-03.jpg" srcset="./img/article-03@2x"
+                                loading="lazy" width="320" height="125" alt="">
                         </picture>
                         <div class="paper_box">
-                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это сложный медицинский вопрос, труебующий </p>
+                            <p class="paper_foreword">Все мы знаем, что мало что помогает по-настоящему омолодиться. Это
+                                сложный медицинский вопрос, труебующий </p>
                             <svg class="paper_icon" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
                                 <use xlink:href="./img/sprite.svg#arrow-big"></use>
                             </svg>
@@ -293,129 +339,229 @@
                     </a>
                 </li>
             </ul>
-            <a class="news_button button button-border" href="">Показать еще</a>
+            <div class="line">
+                <div class="line_empty">
+                    <a class="news_button button button-border" href="">Показать еще</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    <footer class="footer page-footer">
-        <div class="container">
-        <div class="footer_wrap">
-            <a href="index.html">
-                <picture>
-                    <source type="image/webp" srcset="./img/logo-footer.webp 1x, ./img/logo-footer.webp 2x">
-                        <img class="footer_logo" src="./img/logo-footer.png" srcset="./img/logo-footer@2x.png" loading="lazy" width="80" height="41" alt="">
-                </picture>
-            </a>
-            <ul class="footer_nav">
-                <li class="footer_item">
-                    <a class="footer_link" href="index.html">Главная</a>
-                </li>
-                <li class="footer_item">
-                    <a class="footer_link" href="catalog.html">Товары</a>
-                </li>
-                <li class="footer_item">
-                    <a class="footer_link" href="questions.html">Q&A</a>
-                </li>
-                <li class="footer_item">
-                    <a class="footer_link" href="">Статьи</a>
-                </li>
-                <li class="footer_item">
-                    <a class="footer_link" href="about.html">О нас</a>
-                </li>
-                <li class="footer_item">
-                    <a class="footer_link" href="delivery.html">Оплата и доставка</a>
-                </li>
-                <li class="footer_item">
-                    <a class="footer_link" href="contacts.html">Контакты</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer_box">
-            <ul class="footer_contacts">
-                <li class="footer_contact">
-                    <svg class="footer_icon" aria-hidden="true" viewBox="0 0 14 14" width="14" height="14">
-                        <use xlink:href="./img/sprite.svg#mail"></use>
-                    </svg>
-                    <a class="footer_mail" href="mailto:info@4ood.com">info@4ood.com</a>
-                </li>
-                <li class="footer_contact">
-                    <svg class="footer_icon" aria-hidden="true" viewBox="0 0 14 14" width="14" height="14">
-                        <use xlink:href="./img/sprite.svg#phone-call"></use>
-                    </svg>
-                    <a class="footer_phone" href="tel:79261716766">+7 926 171 67 66</a>
-                    
-                </li>
-                <li class="footer_contact">
-                    <svg class="footer_icon" aria-hidden="true" viewBox="0 0 13 14" width="13" height="14">
-                        <use xlink:href="./img/sprite.svg#map"></use>
-                    </svg>
-                    <address class="footer_address">
-                        <span class="footer_text"> Алтуфьевское ш., 27а, Москва, Россия, 129090</span>
-                    </address>
-                    
-                </li> 
-            </ul>
-            <ul class="footer_social social">
-                <li class="social_item">
-                    <a class="social_link" href="https://www.facebook.com/">
-                        <span class="visually-hidden">Facebook</span>
-                        <svg class="social_icon" aria-hidden="true" viewBox="0 0 10 18" width="10" height="18">
-                            <use xlink:href="./img/sprite.svg#facebook"></use>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_wrap">
+                <a href="index.html">
+                    <picture>
+                        <source type="image/webp" srcset="./img/logo-footer.webp 1x, ./img/logo-footer.webp 2x">
+                        <img class="footer_logo" src="./img/logo-footer.png" srcset="./img/logo-footer@2x.png"
+                            loading="lazy" width="80" height="41" alt="">
+                    </picture>
+                </a>
+                <ul class="footer_nav">
+                    <li class="footer_item">
+                        <a class="footer_link" href="index.html">Главная</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link" href="catalog.html">Товары</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link" href="questions.html">Q&A</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link" href="">Статьи</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link" href="about.html">О нас</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link" href="delivery.html">Оплата и доставка</a>
+                    </li>
+                    <li class="footer_item">
+                        <a class="footer_link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_box">
+                <ul class="footer_contacts">
+                    <li class="footer_contact">
+                        <svg class="footer_icon" aria-hidden="true" viewBox="0 0 14 14" width="14" height="14">
+                            <use xlink:href="./img/sprite.svg#mail"></use>
                         </svg>
-                    </a>
-                </li>
-                <li class="social_item">
-                    <a class="social_link" href="https://www.instagram.com/">
-                        <span class="visually-hidden">Instagram</span>
-                        <svg class="social_icon" aria-hidden="true" viewBox="0 0 18 18" width="18" height="18">
-                            <use xlink:href="./img/sprite.svg#instagram"></use>
+                        <a class="footer_mail" href="mailto:info@4ood.com">info@4ood.com</a>
+                    </li>
+                    <li class="footer_contact">
+                        <svg class="footer_icon" aria-hidden="true" viewBox="0 0 14 14" width="14" height="14">
+                            <use xlink:href="./img/sprite.svg#phone-call"></use>
                         </svg>
-                    </a>
-                </li>
-                <li class="social_item">
-                    <a class="social_link" href="https://twitter.com/">
-                        <span class="visually-hidden">Twitter</span>
-                        <svg class="social_icon" aria-hidden="true" viewBox="0 0 18 16" width="18" height="16">
-                            <use xlink:href="./img/sprite.svg#twitter"></use>
+                        <a class="footer_phone" href="tel:79261716766">+7 926 171 67 66</a>
+
+                    </li>
+                    <li class="footer_contact">
+                        <svg class="footer_icon" aria-hidden="true" viewBox="0 0 13 14" width="13" height="14">
+                            <use xlink:href="./img/sprite.svg#map"></use>
                         </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer_wrapper">
-            <ul class="footer_payment payment">
-                <li class="payment_item">
-                    <span class="visually-hidden">Платежная система Mastercard</span>
-                    <svg aria-hidden="true" viewBox="0 0 29 23" width="29" height="23">
-                        <use xlink:href="./img/sprite.svg#mastercard"></use>
-                    </svg>
-                </li>
-                <li class="payment_item">
-                    <span class="visually-hidden">Платежная система Visa</span>
-                    <svg aria-hidden="true" viewBox="0 0 29 29" width="29" height="29">
-                        <use xlink:href="./img/sprite.svg#visa"></use>
-                    </svg>
-                </li>
-                <li class="payment_item">
-                    <span class="visually-hidden">Платежная система American Express</span>
-                    <svg aria-hidden="true" viewBox="0 0 29 29" width="29" height="29">
-                        <use xlink:href="./img/sprite.svg#americanexpress"></use>
-                    </svg>
-                </li>
-                <li class="payment_item">
-                    <span class="visually-hidden">Платежная система Mastercard</span>
-                    <svg aria-hidden="true" viewBox="0 0 29 29" width="29" height="29">
-                        <use xlink:href="./img/sprite.svg#mir"></use>
-                    </svg>
-                </li>
-            </ul>
-            <div class="footer_copyright">©2022, All right reserved.</div>
-        </div>
+                        <address class="footer_address">
+                            <span class="footer_text"> Алтуфьевское ш., 27а, Москва, Россия, 129090</span>
+                        </address>
+
+                    </li>
+                </ul>
+                <ul class="footer_social social">
+                    <li class="social_item">
+                        <a class="social_link" href="https://www.facebook.com/">
+                            <span class="visually-hidden">Facebook</span>
+                            <svg class="social_icon" aria-hidden="true" viewBox="0 0 10 18" width="10" height="18">
+                                <use xlink:href="./img/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a class="social_link" href="https://www.instagram.com/">
+                            <span class="visually-hidden">Instagram</span>
+                            <svg class="social_icon" aria-hidden="true" viewBox="0 0 18 18" width="18" height="18">
+                                <use xlink:href="./img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a class="social_link" href="https://twitter.com/">
+                            <span class="visually-hidden">Twitter</span>
+                            <svg class="social_icon" aria-hidden="true" viewBox="0 0 18 16" width="18" height="16">
+                                <use xlink:href="./img/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_wrapper">
+                <ul class="footer_payment payment">
+                    <li class="payment_item">
+                        <span class="visually-hidden">Платежная система Mastercard</span>
+                        <svg aria-hidden="true" viewBox="0 0 29 23" width="29" height="23">
+                            <use xlink:href="./img/sprite.svg#mastercard"></use>
+                        </svg>
+                    </li>
+                    <li class="payment_item">
+                        <span class="visually-hidden">Платежная система Visa</span>
+                        <svg aria-hidden="true" viewBox="0 0 29 29" width="29" height="29">
+                            <use xlink:href="./img/sprite.svg#visa"></use>
+                        </svg>
+                    </li>
+                    <li class="payment_item">
+                        <span class="visually-hidden">Платежная система American Express</span>
+                        <svg aria-hidden="true" viewBox="0 0 29 29" width="29" height="29">
+                            <use xlink:href="./img/sprite.svg#americanexpress"></use>
+                        </svg>
+                    </li>
+                    <li class="payment_item">
+                        <span class="visually-hidden">Платежная система Mastercard</span>
+                        <svg aria-hidden="true" viewBox="0 0 29 29" width="29" height="29">
+                            <use xlink:href="./img/sprite.svg#mir"></use>
+                        </svg>
+                    </li>
+                </ul>
+                <div class="footer_copyright">©2022, All right reserved.</div>
+            </div>
         </div>
     </footer>
-   
+
+    <div class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <div class="popup_wrapper">
+                    <h2 class="popup_title">Корзина</h2>
+                    <button class="popup_close" type="button">
+                        <span class="visually-hidden">Закрыть окно</span>
+                    </button>
+                </div>
+                <ul class="popup_list">
+                    <li class="popup_card">
+                        <div class="popup_photo">
+                            <img src="./img/preview.jpg" width="60" height="60" alt="">
+                        </div>
+                        <div class="popup_wrap">
+                            <div class="popup_box">
+                                <h3 class="popup_subtitle">Detox набор</h3>
+                                <button class="basket_remove button" type="button">
+                                    <span class="visually-hidden">Удалить товар из
+                                        корзины</span>
+                                    <svg aria-hidden="true" viewBox="0 0 16 18" width="16" height="18">
+                                        <use class="basket_icon" xlink:href="./img/sprite.svg#bin">
+                                        </use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="popup_text">Sorbent + Antifungal</p>
+                            <div class="popup_box">
+                                <div class="basket_count">
+                                    <button class="popup_button basket_button-decrease button" type="button">
+                                        <span class="visually-hidden">Уменьшить количество
+                                            товара</span>
+                                    </button>
+                                    <input class="input input-quantity input-quantity-s" type="number" min="1" max="100"
+                                        value="1">
+                                    <button class="popup_button basket_button-increase button" type="button">
+                                        <span class="visually-hidden">Увеличить количество
+                                            товара</span>
+                                    </button>
+                                </div>
+                                <span class="popup_price">790₽</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="popup_card">
+                        <div class="popup_photo">
+                            <img src="./img/preview.jpg" width="60" height="60" alt="">
+                        </div>
+                        <div class="popup_wrap">
+                            <div class="popup_box">
+                                <h3 class="popup_subtitle">Вечерний чай Aksam detox</h3>
+                                <button class="basket_remove button" type="button">
+                                    <span class="visually-hidden">Удалить товар из
+                                        корзины</span>
+                                    <svg aria-hidden="true" viewBox="0 0 16 18" width="16" height="18">
+                                        <use class="basket_icon" xlink:href="./img/sprite.svg#bin">
+                                        </use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p class="popup_text">Сбор на основе сенны, с мягким слабительным действием, направленным на
+                                предотвращение вздутия и запоров.</p>
+                            <div class="popup_box">
+                                <div class="basket_count">
+                                    <button class="popup_button basket_button-decrease button" type="button">
+                                        <span class="visually-hidden">Уменьшить количество
+                                            товара</span>
+                                    </button>
+                                    <input class="input input-quantity input-quantity-s" type="number" min="1" max="100"
+                                        value="1">
+                                    <button class="popup_button basket_button-increase button" type="button">
+                                        <span class="visually-hidden">Увеличить количество
+                                            товара</span>
+                                    </button>
+                                </div>
+                                <span class="popup_price">790₽</span>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="popup_wrapper">
+                    <p class="popup_sum">Сумма</p>
+                    <p class="popup_total">1580₽</p>
+                </div>
+                <a class="popup_checkout button button-border" href="">Оформить заказ</a>
+                <a class="popup_basket button button-border" href="basket.html">Корзина</a>
+                <div class="popup_note">Добавьте товаров еще на <b>420₽</b> и Вам станет доступна <b>бесплатная
+                        доставка</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="scripts/main.min.js" type="module"></script>
 
 </body>
+
 </html>

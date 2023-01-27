@@ -7,10 +7,14 @@
         background-color: $grey-color;
     }
 
+    @media (min-width: $desktop-s-width) {
+        margin-bottom: 105px;
+        padding-bottom: 0;
+    }
+
     @media (min-width: $desktop-width) {
         margin-bottom: 105px;
         padding-top: 65px;
-        padding-bottom: 0;
     }
 }
 
@@ -103,16 +107,25 @@
         background-color: $primary-color;
     }
 
-    @media (min-width: $desktop-width)  {
+    @media (min-width: $desktop-s-width) {
         display: grid;
         grid-template-columns: 50% 50%;
         column-gap: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+        column-gap: 32px;
     }
 }
 
 .sets_photo {
     display: block;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+
+    @media (min-width: $desktop-s-width) {
+        width: 100%;
+        margin-bottom: 0;
+    }
 
     @media (min-width: $desktop-width) {
         width: 947px;

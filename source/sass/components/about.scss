@@ -1,14 +1,14 @@
 .about {
     padding-bottom: 30px;
 
-    @media (min-width: $desktop-width)  {
+    @media (min-width: $desktop-width) {
         padding-bottom: 0;
     }
 }
 
 .about_list {
     @media (min-width: $tablet-width) {
-        max-width: 768px;
+        max-width: 1024px;
         margin: 0 auto;
     }
 
@@ -37,11 +37,11 @@
     line-height: 26px;
 
     @media (min-width: $desktop-width) {
-       width: 785px;
-       align-self: center;
-       
-       padding-left: 155px;
-       padding-right: 135px;
+        width: 785px;
+        align-self: center;
+
+        padding-left: 155px;
+        padding-right: 135px;
     }
 }
 
@@ -51,7 +51,7 @@
     font-size: 28px;
     text-transform: uppercase;
     opacity: 0.86;
-    
+
     @media (min-width: $desktop-width) {
         font-size: 48px;
         line-height: 58px;
@@ -72,7 +72,7 @@
         background: no-repeat url('../img/background/about-01@2x.jpg');
         background-size: cover;
     }
-    
+
 
     &-second {
         background-image: url("../img/background/about-02.jpg");
@@ -105,7 +105,7 @@
         &-second {
             min-height: 820px;
             background-image: url("../img/background/about-desktop02.jpg");
-    
+
             @media (min-resolution: 2dppx) {
                 background: no-repeat url('../img/background/about-desktop02@2x.jpg');
                 background-size: cover;
@@ -114,7 +114,7 @@
 
         &-third {
             background-image: url("../img/background/about-desktop03.jpg");
-    
+
             @media (min-resolution: 2dppx) {
                 background: no-repeat url('../img/background/about-desktop03@2x.jpg');
                 background-size: cover;
@@ -131,8 +131,10 @@
 
 .about_goals {
     padding-top: 10px;
-    list-style-type: none; /* Убираем исходные маркеры */
-    counter-reset: num; /* Задаём имя счетчика */
+    list-style-type: none;
+    /* Убираем исходные маркеры */
+    counter-reset: num;
+    /* Задаём имя счетчика */
 }
 
 .about_goal {
@@ -143,8 +145,10 @@
 
     &::before {
         position: absolute;
-        content:"0" counter(num) ; /* Выводим число */
-        counter-increment: num; /* Увеличиваем значение счётчика */
+        content: "0" counter(num);
+        /* Выводим число */
+        counter-increment: num;
+        /* Увеличиваем значение счётчика */
         font-family: "Montserrat", Arial, sans-serif;
         font-weight: 500;
         font-size: 24px;
@@ -175,7 +179,7 @@
     bottom: -25px;
     left: 15px;
     background-color: $grey-color;
-    
+
     @media (min-width: $desktop-width) {
         bottom: -50px;
     }

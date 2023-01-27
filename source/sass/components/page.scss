@@ -1,10 +1,12 @@
-.page-header,
-.page-footer {
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
 .page-body {
-    margin-top: 143px;
+    margin-top: 138px;
     flex-grow: 1;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 138px;
+    }
+
+    @media (min-width: $desktop-s-width) {
+        margin-top: 168px;
+    }
 }

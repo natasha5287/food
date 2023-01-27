@@ -45,6 +45,7 @@
 
 .news_item {
     padding: 20px 0;
+
     @media (min-width: $tablet-width) {
         padding: 20px;
         width: 50%;
@@ -52,7 +53,7 @@
 
     @media (min-width: $desktop-width) {
         width: 490px;
-        
+
     }
 }
 
@@ -63,26 +64,4 @@
     min-height: 60px;
     max-width: 360px;
     margin: 0 auto;
-
-    @media (min-width: $desktop-width) {
-        &::before {
-            position: absolute;
-            content: "";
-            width: 1000px;
-            height: 2px;
-            top: 50%;
-            left: calc(100% + 30px);
-            background-color: $green-color;
-        }
-
-        &::after {
-            position: absolute;
-            content: "";
-            width: 1000px;
-            height: 2px;
-            top: 50%;
-            right: calc(100% + 30px);
-            background-color: $green-color;
-        }
-    }
 }

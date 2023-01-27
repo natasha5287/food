@@ -66,24 +66,25 @@ input[name="note"] {
     }
 }
 
-input[type="checkbox"]:hover + .input-mark {
-    background-color: $green-color;
-}
-input[type="checkbox"]:focus + .input-mark {
+input[type="checkbox"]:hover+.input-mark {
     background-color: $green-color;
 }
 
-input[type="checkbox"]:checked + .input-mark::before {
+input[type="checkbox"]:focus+.input-mark {
+    background-color: $green-color;
+}
+
+input[type="checkbox"]:checked+.input-mark::before {
     position: absolute;
     content: "";
     top: 6px;
     left: 6px;
     width: 17px;
-    height:13px;
+    height: 13px;
     background-image: url("../img/checked.svg");
 }
 
-input[type="checkbox"]:checked + .input-mark{
+input[type="checkbox"]:checked+.input-mark {
     background-color: $green-color;
 }
 
@@ -94,16 +95,22 @@ input[type="checkbox"]:checked + .input-mark{
     text-align: center;
     border-width: 1px;
     color: #383838;
-    appearance:textfield;
+    appearance: textfield;
+}
+
+.input-quantity-s {
+    width: 34px;
+    min-height: 24px;
+    height: 24px;
 }
 
 input[type="number"] {
-	-moz-appearance: textfield;
-	-webkit-appearance: textfield;
-	appearance: textfield;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
 }
- 
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-	display: none;
+    display: none;
 }
