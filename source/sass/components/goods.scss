@@ -82,6 +82,14 @@
 }
 
 .goods_box {
+    display: none;
+}
+
+.goods_box.active {
+    display: block;
+}
+
+.goods_box {
     margin-left: -10px;
     padding-top: 20px;
 

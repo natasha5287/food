@@ -1,6 +1,7 @@
 .promo {
-    padding-top: 75px;
-    padding-bottom: 70px;
+    // padding-top: 75px;
+    // padding-bottom: 70px;
+    padding: 75px 20px;
     background: no-repeat url('../img/background/promo.png');
     background-size: 100%;
 
@@ -25,10 +26,17 @@
     }
 }
 
+.promo_slider {
+    @media (min-width: $desktop-width) {
+        max-width: 1590px;
+    }
+}
+
 .promo_container {
+
     @media (min-width: $tablet-width) {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
@@ -129,4 +137,17 @@
 .promo_photo {
     display: block;
     width: 690px;
+}
+
+.promo_slider .promo_button {
+    display: none;
+
+    @media (min-width: $desktop-s-width) {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-20px);
+        right: 0;
+        z-index: 1;
+    }
 }

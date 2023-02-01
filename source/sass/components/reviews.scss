@@ -23,7 +23,6 @@
 }
 
 .reviews_slider {
-
     @media (min-width: $desktop-width) {
         width: 1690px;
         padding-right: 58px;
@@ -31,6 +30,7 @@
 }
 
 .reviews_list {
+    align-items: flex-end;
     margin-bottom: 45px;
 }
 

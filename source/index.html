@@ -121,40 +121,40 @@
         <h1 class="visually-hidden">Интернет-магазин спортивного питания "Food by BCG"</h1>
 
         <section class="promo">
-            <div class="container">
-                <div class="promo_container">
-                    <div class="promo_box">
-                        <h2 class="visually-hidden">Детокс курс</h2>
-                        <span class="promo_note">40 дней</span>
-                        <p class="promo_course text-s">Полный детокс курс</p>
-                        <p class="promo_name text-l">Treasure</p>
-                        <p class="promo_description">Для комплексного улучшения физического и ментального здоровья,
-                            прививающий<br> правильные привычки.</p>
-                        <a href="catalog.html" class="promo_link button button-border">Каталог товаров</a>
+            <div class="promo_slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="promo_container swiper-slide">
+                        <div class="promo_box">
+                            <h2 class="visually-hidden">Детокс курс</h2>
+                            <span class="promo_note">40 дней</span>
+                            <p class="promo_course text-s">Полный детокс курс</p>
+                            <p class="promo_name text-l">Treasure</p>
+                            <p class="promo_description">Для комплексного улучшения физического и ментального здоровья,
+                                прививающий<br> правильные привычки.</p>
+                            <a href="catalog.html" class="promo_link button button-border">Каталог товаров</a>
+                        </div>
+                        <div class="promo_img">
+                            <picture>
+                                <source type="image/webp" media="(min-width: 768px)"
+                                    srcset="./img/box-desktop.webp 1x, ./img/box-desktop@2x.webp 2x">
+                                <img class="promo_photo" src="./img/box-desktop.png" srcset="./img/box-desktop@2x.png"
+                                    width="644" height="520" alt="Фотография продуктов детокс курса">
+                            </picture>
+                        </div>
                     </div>
-                    <div class="promo_img">
-                        <picture>
-                            <source type="image/webp" media="(min-width: 768px)"
-                                srcset="./img/box-desktop.webp 1x, ./img/box-desktop@2x.webp 2x">
-                            <img class="promo_photo" src="./img/box-desktop.png" srcset="./img/box-desktop@2x.png"
-                                width="644" height="520" alt="Фотография продуктов детокс курса">
-                        </picture>
-                    </div>
-                    <div class="hidden">
-                        <button class="button button-circle" type="button">
-                            <span class="visually-hidden">Следующий слайд</span>
-                            <svg class="button_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
-                                <use xlink:href="./img/sprite.svg#arrow"></use>
-                            </svg>
-                        </button>
-                    </div>
+                </div>
+                <div class="promo_button button button-circle" type="button">
+                    <span class="visually-hidden">Следующий слайд</span>
+                    <svg class="button_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                        <use xlink:href="./img/sprite.svg#arrow"></use>
+                    </svg>
                 </div>
             </div>
         </section>
 
         <section class="popular container">
             <div class="popular_wrap">
-                <h2 class="text">Популярные товары</h2>
+                <h2 class="text" id="title-tab">Популярные товары</h2>
                 <div class="popular_tabs tabs">
                     <button class="button button-tab button-tab-active" data-tab-target="#popular"
                         type="button">Популярные товары</button>
@@ -691,47 +691,115 @@
         </section>
 
         <section class="sets">
-            <div class="sets_wrap container">
+            <div class="sets_slider swiper">
+
                 <h2 class="sets_title text">Наши наборы</h2>
-                <div class="sets_tabs tabs">
-                    <button class="button button-tab button-tab-active" type="button">Treasure</button>
-                    <button class="button button-tab" type="button">Новый мир</button>
-                    <button class="button button-tab" type="button">Detox</button>
-                    <button class="button button-tab" type="button">Здоровье тела</button>
-                    <div class="sets_button hidden">
-                        <button class="button button-circle" type="button">
-                            <span class="visually-hidden">Следующий слайд</span>
-                            <svg class="button_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
-                                <use xlink:href="./img/sprite.svg#arrow"></use>
-                            </svg>
-                        </button>
+
+                <div class="sets_list swiper-wrapper">
+                    <div class="sets_box swiper-slide">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1024px)"
+                                srcset="./img/sets-desktop.webp 1x, ./img/sets-desktop@2x.webp 2x">
+                            <source type="image/webp" srcset="./img/sets-mobile.webp 1x, ./img/sets-mobile@2x.webp 2x">
+                            <source media="(min-width: 1024px)"
+                                srcset="./img/sets-desktop.jpg 1x, ./img/sets-desktop@2x.jpg 2x">
+                            <img class="sets_photo" src="./img/sets-mobile.jpg" srcset="./img/sets-mobile@2x"
+                                loading="lazy" width="360" height="231" alt="">
+                        </picture>
+                        <div class="sets_content">
+                            <p class="sets_course text-s">Полный детокс курс</p>
+                            <p class="sets_name text-l">Treasure</p>
+                            <p class="sets_description">Для комплексного улучшения физического и ментального здоровья,
+                                прививающий правильные привычки.</p>
+                            <p class="sets_price">2790₽</p>
+                            <div class="sets_buy">
+                                <a class="sets_link button button-border" href="#">Подробнее</a>
+                                <a class="sets_link button button-green" href="">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sets_box swiper-slide">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1024px)"
+                                srcset="./img/sets-desktop.webp 1x, ./img/sets-desktop@2x.webp 2x">
+                            <source type="image/webp" srcset="./img/sets-mobile.webp 1x, ./img/sets-mobile@2x.webp 2x">
+                            <source media="(min-width: 1024px)"
+                                srcset="./img/sets-desktop.jpg 1x, ./img/sets-desktop@2x.jpg 2x">
+                            <img class="sets_photo" src="./img/sets-mobile.jpg" srcset="./img/sets-mobile@2x"
+                                loading="lazy" width="360" height="231" alt="">
+                        </picture>
+                        <div class="sets_content">
+                            <p class="sets_course text-s">Полный детокс курс</p>
+                            <p class="sets_name text-l">Новый мир</p>
+                            <p class="sets_description">Для комплексного улучшения физического и ментального здоровья,
+                                прививающий правильные привычки.</p>
+                            <p class="sets_price">2790₽</p>
+                            <div class="sets_buy">
+                                <a class="sets_link button button-border" href="#">Подробнее</a>
+                                <a class="sets_link button button-green" href="">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sets_box swiper-slide">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1024px)"
+                                srcset="./img/sets-desktop.webp 1x, ./img/sets-desktop@2x.webp 2x">
+                            <source type="image/webp" srcset="./img/sets-mobile.webp 1x, ./img/sets-mobile@2x.webp 2x">
+                            <source media="(min-width: 1024px)"
+                                srcset="./img/sets-desktop.jpg 1x, ./img/sets-desktop@2x.jpg 2x">
+                            <img class="sets_photo" src="./img/sets-mobile.jpg" srcset="./img/sets-mobile@2x"
+                                loading="lazy" width="360" height="231" alt="">
+                        </picture>
+                        <div class="sets_content">
+                            <p class="sets_course text-s">Полный детокс курс</p>
+                            <p class="sets_name text-l">Detox</p>
+                            <p class="sets_description">Для комплексного улучшения физического и ментального здоровья,
+                                прививающий правильные привычки.</p>
+                            <p class="sets_price">2790₽</p>
+                            <div class="sets_buy">
+                                <a class="sets_link button button-border" href="#">Подробнее</a>
+                                <a class="sets_link button button-green" href="">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sets_box swiper-slide">
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1024px)"
+                                srcset="./img/sets-desktop.webp 1x, ./img/sets-desktop@2x.webp 2x">
+                            <source type="image/webp" srcset="./img/sets-mobile.webp 1x, ./img/sets-mobile@2x.webp 2x">
+                            <source media="(min-width: 1024px)"
+                                srcset="./img/sets-desktop.jpg 1x, ./img/sets-desktop@2x.jpg 2x">
+                            <img class="sets_photo" src="./img/sets-mobile.jpg" srcset="./img/sets-mobile@2x"
+                                loading="lazy" width="360" height="231" alt="">
+                        </picture>
+                        <div class="sets_content">
+                            <p class="sets_course text-s">Полный детокс курс</p>
+                            <p class="sets_name text-l">Здоровье тела</p>
+                            <p class="sets_description">Для комплексного улучшения физического и ментального здоровья,
+                                прививающий правильные привычки.</p>
+                            <p class="sets_price">2790₽</p>
+                            <div class="sets_buy">
+                                <a class="sets_link button button-border" href="#">Подробнее</a>
+                                <a class="sets_link button button-green" href="">Купить</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="sets_pagination swiper-pagination"></div>
+
+                <button class="sets_button button button-circle" type="button">
+                    <span class="visually-hidden">Следующий слайд</span>
+                    <svg class="button_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
+                        <use xlink:href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                </button>
+
+                <span class="sets_mark mark">Treasure</span>
             </div>
-            <div class="sets_box">
-                <picture>
-                    <source type="image/webp" media="(min-width: 1024px)"
-                        srcset="./img/sets-desktop.webp 1x, ./img/sets-desktop@2x.webp 2x">
-                    <source type="image/webp" srcset="./img/sets-mobile.webp 1x, ./img/sets-mobile@2x.webp 2x">
-                    <source media="(min-width: 1024px)"
-                        srcset="./img/sets-desktop.jpg 1x, ./img/sets-desktop@2x.jpg 2x">
-                    <img class="sets_photo" src="./img/sets-mobile.jpg" srcset="./img/sets-mobile@2x" loading="lazy"
-                        width="360" height="231" alt="">
-                </picture>
-                <div class="sets_content">
-                    <p class="sets_course text-s">Полный детокс курс</p>
-                    <p class="sets_name text-l">Treasure</p>
-                    <p class="sets_description">Для комплексного улучшения физического и ментального здоровья,
-                        прививающий правильные привычки.</p>
-                    <p class="sets_price">2790₽</p>
-                    <div class="sets_buy">
-                        <a class="sets_link button button-border" href="#">Подробнее</a>
-                        <a class="sets_link button button-green" href="">Купить</a>
-                    </div>
-                </div>
-            </div>
-            <span class="sets_mark mark">Treasure</span>
+
         </section>
+
 
         <section class="benefits">
             <h2 class="benefits_title text">Наши преимущества</h2>
@@ -795,27 +863,32 @@
         </section>
 
         <section class="aesthetics">
-            <h2 class="visually-hidden">Товары для комплексного улучшения здоровья</h2>
-            <picture>
-                <source type="image/webp" srcset="./img/aesthetics-desktop.webp 1x, ./img/aesthetics-desktop.webp 2x">
-                <img class="aesthetics_desktop" src="./img/aesthetics-desktop.jpg"
-                    srcset="./img/aesthetics-desktop@2x.jpg" loading="lazy" width="782" height="624" alt="">
-            </picture>
-            <div class="aesthetics_box">
-                <p class="aesthetics_subtitle text-s">Всесторонний подход</p>
-                <p class="aesthetics_name text-l">к красоте</p>
-                <p class="aesthetics_description">Мы заботимся о восприятии нашего продукта и стараемся, чтобы 4ood был
-                    не только полезен, но и приятен эстетически.</p>
-                <div class="aesthetics_photo">
-                    <picture>
-                        <source type="image/webp" srcset="./img/aesthetics.webp 1x, ./img/aesthetics.webp 2x">
-                        <img class="aesthetics_img" src="./img/aesthetics.png" srcset="./img/aesthetics@2x.png"
-                            loading="lazy" width="176" height="235" alt="">
-                    </picture>
+            <div class="aesthetics_wrapper">
+                <h2 class="visually-hidden">Товары для комплексного улучшения здоровья</h2>
+                <picture>
+                    <source type="image/webp"
+                        srcset="./img/aesthetics-desktop.webp 1x, ./img/aesthetics-desktop.webp 2x">
+                    <img class="aesthetics_desktop" src="./img/aesthetics-desktop.jpg"
+                        srcset="./img/aesthetics-desktop@2x.jpg" loading="lazy" width="782" height="624" alt="">
+                </picture>
+                <div class="aesthetics_box">
+                    <p class="aesthetics_subtitle text-s">Всесторонний подход</p>
+                    <p class="aesthetics_name text-l">к красоте</p>
+                    <p class="aesthetics_description">Мы заботимся о восприятии нашего продукта и стараемся, чтобы 4ood
+                        был
+                        не только полезен, но и приятен эстетически.</p>
+                    <div class="aesthetics_photo">
+                        <picture>
+                            <source type="image/webp" srcset="./img/aesthetics.webp 1x, ./img/aesthetics.webp 2x">
+                            <img class="aesthetics_img" src="./img/aesthetics.png" srcset="./img/aesthetics@2x.png"
+                                loading="lazy" width="176" height="235" alt="">
+                        </picture>
+                    </div>
+                    <a href="catalog.html" class="aesthetics_link button button-border button-border-white">В
+                        каталог</a>
                 </div>
-                <a href="catalog.html" class="aesthetics_link button button-border button-border-white">В каталог</a>
+                <span class="mark mark-dark">aesthetics</span>
             </div>
-            <span class="mark mark-dark">aesthetics</span>
         </section>
 
         <section class="reviews">
@@ -865,22 +938,6 @@
                         <picture>
                             <source type="image/webp" srcset="./img/review-03.webp 1x, ./img/review-03@2x.webp 2x">
                             <img class="reviews_img" src="./img/review-03.png" srcset="./img/review-03@2x.png"
-                                loading="lazy" width="68" height="68" alt="">
-                        </picture>
-                    </li>
-                    <li class="reviews_card swiper-slide">
-                        <blockquote class="reviews_blockquote">
-                            <span class="reviews_quotes">“</span>
-                            <p class="reviews_text">Я очень люблю бег и спорт, но не всегда на всё хватает сил,
-                                поэтому
-                                я использую БАДы, чтобы держать себя в форме. Продукция 4FOOD company меня полностью
-                                устраивает.</p>
-                        </blockquote>
-                        <p class="reviews_autor">Мария Х.</p>
-                        <span class="reviews_profession">Спортсменка</span>
-                        <picture>
-                            <source type="image/webp" srcset="./img/review-02.webp 1x, ./img/review-02@2x.webp 2x">
-                            <img class="reviews_img" src="./img/review-02.png" srcset="./img/review-02@2x.png"
                                 loading="lazy" width="68" height="68" alt="">
                         </picture>
                     </li>

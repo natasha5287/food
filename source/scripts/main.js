@@ -83,6 +83,8 @@ popupLink.addEventListener('click', function (e) {
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content]');
 const tabsBtn = document.querySelectorAll('[data-tab-btn]');
+let titleBlock = document.getElementById('title-tab');
+
 
 function clearTabs() {
   tabContents.forEach(tabContent => {
@@ -99,9 +101,12 @@ tabs.forEach(tab => {
     clearTabs();
     tab.classList.add('button-tab-active');
     target.classList.add('active');
+    console.log(tab.textContent);
+    console.log(titleBlock.textContent);
+    titleBlock.textContent = tab.textContent;
+
   })
 })
-
 
 // кнопки на табах в корзине
 tabsBtn.forEach(tab => {
@@ -115,7 +120,7 @@ tabsBtn.forEach(tab => {
           tab.classList.add('button-tab-active');
         }
       })
-    }
+    };
 
     if (tab.dataset.tabBtn === '#basket') {
       document.getElementById('basket').classList.add('active');
@@ -124,12 +129,57 @@ tabsBtn.forEach(tab => {
           tab.classList.add('button-tab-active');
         }
       })
-    }
+    };
+
+    window.scrollTo({ top, behavior: "smooth" });
 
   })
 })
 
-// Слайдер
+//Слайдер promo
+
+const swiperPromo = new Swiper('.promo_slider', {
+  navigation: {
+    nextEl: '.promo_button',
+  },
+  slidesPerView: 1,
+  spaceBetween: 20,
+  initialSlide: 0,
+  watchOverflow: true,
+  loop: true,
+  speed: 800,
+
+})
+
+// Слайдер Sets
+
+const namesSlide = document.querySelectorAll('.sets_name');
+const slideMenu = [];
+
+namesSlide.forEach(name => {
+  slideMenu.push(name.textContent);
+})
+
+const swiperSets = new Swiper('.sets_slider', {
+  navigation: {
+    nextEl: '.sets_button',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (slideMenu[index]) + '</span>';
+    },
+  },
+  initialSlide: 0,
+  watchOverflow: true,
+  loop: true,
+  spaceBetween: 50,
+  speed: 1000,
+})
+
+
+// Слайдер reviews
 
 const swiperReview = new Swiper('.reviews_slider', {
   navigation: {
@@ -142,6 +192,7 @@ const swiperReview = new Swiper('.reviews_slider', {
   initialSlide: 0,
   watchOverflow: true,
   loop: true,
+  speed: 800,
   breakpoints: {
     360: {
       slidesPerView: 1,
@@ -157,3 +208,4 @@ const swiperReview = new Swiper('.reviews_slider', {
     }
   }
 });
+

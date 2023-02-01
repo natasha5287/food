@@ -2,6 +2,8 @@
     padding-bottom: 30px;
 
     @media (min-width: $desktop-width) {
+        max-width: 1920px;
+        margin: 0 auto;
         padding-bottom: 0;
     }
 }
