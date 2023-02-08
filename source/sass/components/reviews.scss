@@ -9,7 +9,9 @@
     @media (min-width: $desktop-width) {
         max-width: 1690px;
         margin: 0 auto 110px;
-        padding-left: 0;
+
+        padding-top: 80px;
+
     }
 }
 
@@ -32,6 +34,10 @@
 .reviews_list {
     align-items: flex-end;
     margin-bottom: 45px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 100px;
+    }
 }
 
 .reviews_card {
@@ -100,9 +106,9 @@
     justify-content: center;
     gap: 10px;
 
-    @media (min-width: $desktop-width) {
-        display: none;
-    }
+    // @media (min-width: $desktop-width) {
+    //     display: none;
+    // }
 }
 
 .reviews_slider .swiper-pagination-bullet {
@@ -125,7 +131,7 @@
     @media (min-width: $desktop-width) {
         display: block;
         position: absolute;
-        top: 50%;
+        top: 40%;
         transform: translateY(-20px);
         right: 0;
         z-index: 1;

@@ -15,22 +15,26 @@
         bottom: 100px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         line-height: 195px;
-        font-size: 268px;
-        left: 40%;
+        left: 37%;
+        font-size: 200px;
         bottom: 0;
         width: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 268px;
     }
 }
 
 .mark-left {
     display: none;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-s-width) {
         text-transform: uppercase;
         display: block;
-        left: -165px;
+        left: 40px;
         bottom: 80px;
     }
 }

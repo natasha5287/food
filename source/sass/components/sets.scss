@@ -19,19 +19,15 @@
 
 .sets_title {
     line-height: 30px;
-    padding: 30px 0 135px;
+    padding: 30px 0 60px;
 
     @media (min-width: $tablet-width) {
-        padding-bottom: 50px;
-    }
-
-    @media (min-width: $desktop-s-width) {
-        padding-bottom: 65px;
+        padding-bottom: 30px;
     }
 
     @media (min-width: $desktop-width) {
         text-align: left;
-        padding: 90px 165px 60px;
+        padding: 90px 165px 30px;
         margin-right: auto;
         margin-bottom: 0;
     }
@@ -154,66 +150,71 @@
     }
 }
 
-.sets_pagination.swiper-pagination {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    top: 112px;
-    right: 10px;
-    margin: 0;
-    padding: 0 60px;
-    row-gap: 10px;
-    height: max-content;
+.sets_slider {
+    .swiper-pagination {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 60px;
+        row-gap: 10px;
+        height: max-content;
 
-    @media (min-width: $tablet-width) {
-        justify-content: center;
-        top: 65px;
+        @media (min-width: $tablet-width) {
+            justify-content: center;
+        }
+
+        @media (min-width: $desktop-s-width) {
+            justify-content: flex-end;
+            padding-right: 15%;
+            padding-bottom: 15px;
+        }
+
+        @media (min-width: $desktop-width) {
+            column-gap: 20px;
+            padding-bottom: 0;
+            top: -60px;
+        }
     }
 
-    @media (min-width: $desktop-s-width) {
-        justify-content: flex-end;
-        padding-right: 15%;
-        top: 75px;
-    }
 
-    @media (min-width: $desktop-width) {
-        column-gap: 20px;
-        top: 90px;
-    }
-}
-
-.sets_slider .swiper-pagination-bullet {
-    padding: 5px 10px;
-    border-radius: 0;
-    width: auto;
-    height: 30px;
-    color: #5B6773;
-    background-color: transparent;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 24px;
-    opacity: 1;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-
-    @media (min-width: $desktop-s-width) {
-        font-size: 18px;
+    .swiper-pagination-bullet {
+        padding: 5px 10px;
+        border-radius: 0;
+        width: auto;
+        height: 30px;
+        color: #5B6773;
+        background-color: transparent;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
         line-height: 24px;
+        opacity: 1;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        @media (min-width: $desktop-s-width) {
+            font-size: 18px;
+            line-height: 24px;
+        }
     }
-}
 
-.sets_slider .swiper-pagination-bullet-active {
-    font-weight: 700;
-    color: #1C252E;
-    text-decoration: $green-color underline 5px;
-    text-underline-offset: 8px;
+    .swiper-pagination-bullet-active {
+        font-weight: 700;
+        color: #1C252E;
+        text-decoration: $green-color underline 5px;
+        text-underline-offset: 8px;
 
-    @media (min-width: $desktop-s-width) {
-        font-size: 18px;
-        line-height: 24px;
+        @media (min-width: $desktop-s-width) {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+
+    .sets_mark {
+        z-index: 2;
     }
 }
 
@@ -223,7 +224,7 @@
     @media (min-width: $desktop-s-width) {
         display: block;
         position: absolute;
-        top: 70px;
+        top: 75px;
         right: 7%;
         z-index: 10;
     }

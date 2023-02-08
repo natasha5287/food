@@ -22,6 +22,7 @@
     }
 
     @media (min-width: $desktop-width) {
+        padding-bottom: 0;
         margin-top: 105px;
     }
 }
@@ -41,7 +42,7 @@
     }
 
     @media (min-width: $desktop-width) {
-        padding-left: 165px;
+        // padding-left: 165px;
         padding-right: 120px;
     }
 }
@@ -54,7 +55,7 @@
 
     @media (min-width: $desktop-width) {
         max-width: 500px;
-        padding-top: 45px;
+        // padding-top: 45px;
     }
 }
 

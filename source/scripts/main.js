@@ -178,7 +178,6 @@ const swiperSets = new Swiper('.sets_slider', {
   speed: 1000,
 })
 
-
 // Слайдер reviews
 
 const swiperReview = new Swiper('.reviews_slider', {
@@ -208,4 +207,27 @@ const swiperReview = new Swiper('.reviews_slider', {
     }
   }
 });
+
+// Слайдер best
+
+const swiperBest = new Swiper('.best_slider', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+  initialSlide: 0,
+  watchOverflow: true,
+  loop: true,
+  speed: 800,
+  spaceBetween: 30,
+
+  breakpoints: {
+    1024: {
+      spaceBetween: 60,
+    }
+  }
+})
 

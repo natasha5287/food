@@ -695,6 +695,8 @@
 
                 <h2 class="sets_title text">Наши наборы</h2>
 
+                <div class="sets_pagination swiper-pagination"></div>
+
                 <div class="sets_list swiper-wrapper">
                     <div class="sets_box swiper-slide">
                         <picture>
@@ -786,8 +788,6 @@
                     </div>
                 </div>
 
-                <div class="sets_pagination swiper-pagination"></div>
-
                 <button class="sets_button button button-circle" type="button">
                     <span class="visually-hidden">Следующий слайд</span>
                     <svg class="button_arrow" aria-hidden="true" viewBox="0 0 19 8" width="19" height="8">
@@ -838,26 +838,30 @@
             </div>
         </section>
 
-        <section class="activelife container">
+        <section class="activelife">
             <h2 class="visually-hidden">Товары для комплексного улучшения здоровья</h2>
             <div class="activelife_box">
-                <p class="activelife_subtitle text-s">с нами у тебя есть все, чтобы</p>
-                <p class="activelife_name text-l">Жить активно</p>
+                <div class="activelife_wrap">
+                    <p class="activelife_subtitle text-s">с нами у тебя есть все, чтобы</p>
+                    <p class="activelife_name text-l">Жить активно</p>
+                </div>
                 <div class="activelife_photo">
                     <picture>
-                        <source type="image/webp" media="(min-width: 1920px)"
+                        <source type="image/webp" media="(min-width: 1024px)"
                             srcset="./img/graphic-desktop.webp 1x, ./img/graphic-desktop@2x.webp 2x">
                         <source type="image/webp" srcset="./img/graphic.webp 1x, ./img/graphic.webp 2x">
-                        <source media="(min-width: 1920px)"
+                        <source media="(min-width: 1024px)"
                             srcset="./img/graphic-desktop.jpg 1x, ./img/graphic-desktop@2x.jpg 2x">
                         <img class="activelife_img" src="./img/graphic.png" srcset="./img/graphic@2x.jpg" loading="lazy"
                             width="320" height="263" alt="">
                     </picture>
                 </div>
-                <p class="activelife_description">Попробуй наши товары для комплексного улучшения физического и
-                    ментального
-                    здоровья, прививающий правильные привычки.</p>
-                <a href="catalog.html" class="activelife_link button button-border">В каталог</a>
+                <div>
+                    <p class="activelife_description">Попробуй наши товары для комплексного улучшения физического и
+                        ментального
+                        здоровья, прививающий правильные привычки.</p>
+                    <a href="catalog.html" class="activelife_link button button-border">В каталог</a>
+                </div>
             </div>
             <span class="mark mark-left">A<span class="mark-uppercase">ctive</span></span>
         </section>
