@@ -1,6 +1,4 @@
 .promo {
-    // padding-top: 75px;
-    // padding-bottom: 70px;
     padding: 75px 20px;
     background: no-repeat url('../img/background/promo.png');
     background-size: 100%;
@@ -42,7 +40,6 @@
     }
 
     @media (min-width: $desktop-width) {
-        // padding-left: 165px;
         padding-right: 120px;
     }
 }
@@ -55,7 +52,6 @@
 
     @media (min-width: $desktop-width) {
         max-width: 500px;
-        // padding-top: 45px;
     }
 }
 
