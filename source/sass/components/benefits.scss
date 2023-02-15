@@ -2,15 +2,11 @@
     margin-bottom: 55px;
 
     @media (min-width: $desktop-s-width) {
-        max-width: 1300px;
+        padding: 0 50px;
+        max-width: 1690px;
         margin: 0 auto 50px;
     }
 
-    @media (min-width: $desktop-width) {
-        max-width: 1590px;
-        margin: 0 auto 125px;
-        padding: 0;
-    }
 }
 
 .benefits_wrap {

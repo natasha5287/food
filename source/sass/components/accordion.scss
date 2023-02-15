@@ -1,6 +1,19 @@
+.accordion {
+    max-width: 1010px;
+    margin: 0 auto;
+}
+
 .accordion_item {
     background-color: $grey-color;
     margin-bottom: 16px;
+
+    &.opened {
+        .accordion_title {
+            &::after {
+                display: none;
+            }
+        }
+    }
 
     @media (min-width: $desktop-width) {
         margin-bottom: 20px;
@@ -62,7 +75,7 @@
     position: relative;
     line-height: 26px;
     padding: 30px 20px 35px;
-    
+
     &::before {
         position: absolute;
         content: "";
@@ -77,7 +90,7 @@
         padding-left: 36px;
         padding-right: 36px;
         padding-bottom: 20px;
-    
+
         &::before {
             left: 36px;
             right: 36px;
@@ -100,7 +113,7 @@
     }
 }
 
-.accordion_item.opened .accordion_box{
+.accordion_item.opened .accordion_box {
     max-height: 3000px;
 }
 

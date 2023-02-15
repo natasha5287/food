@@ -6,6 +6,7 @@
     justify-content: center;
     color: $white-color;
     text-transform: uppercase;
+    height: min-content;
 
     @media (min-width: $tablet-width) {
         font-size: 12px;

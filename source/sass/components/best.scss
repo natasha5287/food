@@ -2,7 +2,7 @@
     padding: 0 20px 20px;
 
     @media (min-width: $tablet-width) {
-        padding: 0 50px;
+        padding: 0 50px 20px;
         background-color: $grey-color;
     }
 
@@ -11,7 +11,7 @@
     }
 
     @media (min-width: $desktop-width) {
-        padding: 60px 165px 0;
+        padding: 60px 165px 20px;
     }
 }
 
@@ -112,7 +112,7 @@
 
         @media (min-width: $desktop-s-width) {
             display: block;
-            z-index: 2;
+            // z-index: 2;
         }
     }
 

@@ -1,22 +1,17 @@
-//Выбираем кнопку открытия меню
-let navOpen = document.querySelector('.header-open');
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
 
-// Выбираем меню, которое надо показать при нажатии на кнопку
-let overlay = document.querySelector('.header_box');
+//Menu
+const navOpen = document.querySelector('.header-open');
+const overlay = document.querySelector('.header_box');
+const navClose = document.querySelector('.header-close');
 
-//Добавляем класс для скрытого меню
 navOpen.addEventListener('click', function () {
   overlay.classList.add('header_box-open');
 })
 
-//Выбираем кнопку закрытия меню
-let navClose = document.querySelector('.header-close');
-
-//Убираем класс для открытого меню
 navClose.addEventListener('click', function () {
   overlay.classList.remove('header_box-open');
 })
-
 
 
 //Accordion
@@ -35,7 +30,8 @@ function removeClass() {
   })
 }
 
-// Редактирование количества единиц товара
+//Quantity of goods
+const counts = document.querySelectorAll(".basket_count");
 
 function countFunc(count) {
   const btnPlus = count.querySelector(".basket_button-increase");
@@ -58,31 +54,34 @@ function countFunc(count) {
 
 }
 
-const counts = document.querySelectorAll(".basket_count");
 counts.forEach(countFunc);
 
-//Popup корзины
+//Popup 
 
 const popupLink = document.querySelector('.popup_link');
 const popupElement = document.querySelector('.popup');
 const popupCloseButton = document.querySelector('.popup_close');
 
-popupCloseButton.addEventListener('click', function () {
-  popupElement.classList.remove('popup-opened');
-})
+if (popupLink) {
+  popupCloseButton.addEventListener('click', function () {
+    popupElement.classList.remove('popup-opened');
+  })
 
-popupLink.addEventListener('click', function (e) {
-  if (window.innerWidth >= 1024) {
-    e.preventDefault();
-    popupElement.classList.add('popup-opened');
-  }
-})
+
+  popupLink.addEventListener('click', function (e) {
+    if (window.innerWidth >= 1024) {
+      e.preventDefault();
+      popupElement.classList.toggle('popup-opened');
+    }
+  })
+
+}
+
 
 
 //tabs 
 const tabs = document.querySelectorAll('[data-tab-target]');
 const tabContents = document.querySelectorAll('[data-tab-content]');
-const tabsBtn = document.querySelectorAll('[data-tab-btn]');
 let titleBlock = document.getElementById('title-tab');
 
 
@@ -101,42 +100,13 @@ tabs.forEach(tab => {
     clearTabs();
     tab.classList.add('button-tab-active');
     target.classList.add('active');
-    console.log(tab.textContent);
-    console.log(titleBlock.textContent);
-    titleBlock.textContent = tab.textContent;
-
+    if (titleBlock) {
+      titleBlock.textContent = tab.textContent;
+    }
   })
 })
 
-// кнопки на табах в корзине
-tabsBtn.forEach(tab => {
-  tab.addEventListener('click', () => {
-    clearTabs();
-
-    if (tab.dataset.tabBtn === '#checkout') {
-      document.getElementById('checkout').classList.add('active');
-      tabs.forEach(tab => {
-        if (tab.dataset.tabTarget === "#checkout") {
-          tab.classList.add('button-tab-active');
-        }
-      })
-    };
-
-    if (tab.dataset.tabBtn === '#basket') {
-      document.getElementById('basket').classList.add('active');
-      tabs.forEach(tab => {
-        if (tab.dataset.tabTarget === "#basket") {
-          tab.classList.add('button-tab-active');
-        }
-      })
-    };
-
-    window.scrollTo({ top, behavior: "smooth" });
-
-  })
-})
-
-//Слайдер promo
+//Slider Promo
 
 const swiperPromo = new Swiper('.promo_slider', {
   navigation: {
@@ -151,7 +121,7 @@ const swiperPromo = new Swiper('.promo_slider', {
 
 })
 
-// Слайдер Sets
+//Slider Sets
 
 const namesSlide = document.querySelectorAll('.sets_name');
 const slideMenu = [];
@@ -178,7 +148,7 @@ const swiperSets = new Swiper('.sets_slider', {
   speed: 1000,
 })
 
-// Слайдер reviews
+//Slider Reviews
 
 const swiperReview = new Swiper('.reviews_slider', {
   navigation: {
@@ -208,7 +178,7 @@ const swiperReview = new Swiper('.reviews_slider', {
   }
 });
 
-// Слайдер best
+//Slider Best
 
 const swiperBest = new Swiper('.best_slider', {
   navigation: {
@@ -230,4 +200,28 @@ const swiperBest = new Swiper('.best_slider', {
     }
   }
 })
+
+//Change .button-heart color
+const buttonsFavorite = document.querySelectorAll('.button-heart');
+
+buttonsFavorite.forEach((e) => {
+  e.addEventListener('click', () => {
+    e.classList.toggle('active');
+  })
+})
+
+//Modal
+const form = document.getElementById('form');
+const buttonModal = document.querySelector('.form_confirm');
+const modal = document.querySelector('.modal');
+
+buttonModal.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  if (form.checkValidity()) {
+    modal.classList.add('opened');
+  } else {
+    alert('Заполните обязательные поля');
+  }
+})
+
 

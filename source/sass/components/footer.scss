@@ -13,19 +13,6 @@
     }
 }
 
-.footer_container {
-    padding: 0 20px;
-
-    @media (min-width: $tablet-width) {
-        padding: 0 50px;
-    }
-
-    @media (min-width: $desktop-s-width) {
-        max-width: 1590px;
-        margin: 0 auto;
-    }
-}
-
 .footer_wrap {
     margin-bottom: 35px;
 
@@ -51,13 +38,9 @@
 .footer_nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     column-gap: 30px;
     row-gap: 20px;
-
-    @media (min-width: $tablet-width) {
-        justify-content: flex-start;
-    }
 
     @media (min-width: $desktop-s-width) {
         justify-content: flex-end;
@@ -76,7 +59,7 @@
     transition: color 0.3s ease-in-out;
 
     &:hover {
-        color: $green-color;
+        color: $white-color;
     }
 
     @media (min-width: $desktop-width) {
@@ -113,16 +96,12 @@
     margin-bottom: 10px;
     transition: color 0.3s ease-in-out, stroke 0.3s ease-in-out;
 
+    &:hover .footer_text {
+        color: $white-color;
+    }
+
     &:hover .footer_icon {
-        stroke: $green-color;
-    }
-
-    &:hover .footer_mail {
-        color: $green-color;
-    }
-
-    &:hover .footer_phone {
-        color: $green-color;
+        stroke: $white-color;
     }
 
     @media (min-width: $desktop-width) {
@@ -136,25 +115,24 @@
 
 .footer_icon {
     stroke: $darkgrey-color;
-}
-
-.footer_mail {
-    font-style: normal;
-    color: $darkgrey-color;
-}
-
-.footer_phone {
-    font-style: normal;
-    color: $darkgrey-color;
+    transition: all 0.3s ease;
 }
 
 .footer_text {
     font-style: normal;
+    color: $darkgrey-color;
+    transition: all 0.3s ease;
 }
 
 .footer_social {
+    display: flex;
     margin-bottom: 30px;
     gap: 20px;
+
+    .social_link:hover .social_icon {
+        fill: $white-color;
+        opacity: 1;
+    }
 
     @media (min-width: $desktop-s-width) {
         margin-left: 70px;

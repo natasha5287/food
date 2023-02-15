@@ -1,3 +1,5 @@
+@import url(https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css);
+
 @import "./global/variables.scss";
 @import "./global/fonts.scss";
 @import "./global/global.scss";
@@ -46,7 +48,7 @@
 @import "./components/advice.scss";
 @import "./components/about.scss";
 @import "./components/popup.scss";
-@import './components/best.scss';
+@import "./components/best.scss";
+@import "./components/modal.scss";
 
 @import "./components/footer.scss";
-@import "./components/swiper.scss";

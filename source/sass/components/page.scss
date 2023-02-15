@@ -2,11 +2,7 @@
     margin-top: 138px;
     flex-grow: 1;
 
-    @media (min-width: $tablet-width) {
-        margin-top: 138px;
-    }
-
     @media (min-width: $desktop-s-width) {
-        margin-top: 168px;
+        margin-top: 167px;
     }
 }

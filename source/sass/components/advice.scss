@@ -4,8 +4,8 @@
     background-color: $grey-color;
     background: no-repeat url('../img/background/advice.jpg');
     background-size: 100%;
-   
-    
+
+
 
     @media (min-resolution: 2dppx) {
         background: no-repeat url('../img/background/advice@2x.jpg');
@@ -67,7 +67,13 @@
 }
 
 .advice_input {
-    border: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    border: none;
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: $primary-color;
+
     &::placeholder {
         font-family: "Montserrat", "Arial", sans-serif;
         font-weight: 500;
@@ -77,11 +83,12 @@
         text-align: center;
     }
 
-    &:focus {
-        font-family: "Montserrat", "Arial", sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 24px;
-        color: $primary-color;
+    &:focus-visible {
+        outline: none;
     }
+
+    &:focus {
+        border: none;
+    }
+
 }

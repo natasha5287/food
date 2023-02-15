@@ -5,24 +5,54 @@
 }
 
 .basket_grey {
+    padding: 0 20px;
+
     @media (min-width: $tablet-width) {
+        padding: 0 50px;
         background-color: $grey-color;
     }
 }
 
-.basket_tabs {
+.basket_breadcrumbs {
     display: flex;
     align-items: center;
     gap: 11px;
     flex-wrap: wrap;
     margin-bottom: 33px;
     padding-top: 25px;
-    padding-bottom: 17px;
+    padding-bottom: 20px;
 
     @media (min-width: $desktop-width) {
+        max-width: 1590px;
+        margin-right: auto;
+        margin-left: auto;
         padding-top: 35px;
-        padding-bottom: 30px;
+        padding-bottom: 32px;
         gap: 30px;
+    }
+}
+
+.basket_breadcrumb {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: $darkgrey-color;
+
+    &-active {
+        font-weight: 700;
+        color: $primary-color;
+        text-decoration-line: underline;
+        text-decoration-thickness: 4px;
+        text-underline-offset: 17px;
+        text-decoration-color: $green-color;
+
+        @media (min-width: $desktop-width) {
+            text-underline-offset: 30px;
+        }
+    }
+
+    @media (min-width: $desktop-s-width) {
+        font-size: 18px;
     }
 }
 
@@ -33,7 +63,7 @@
     }
 }
 
-.basket_tabs .button-tab-active {
+.basket_breadcrumb .basket_breadcrumb-active {
 
     @media (min-width: $desktop-width) {
         text-underline-offset: 30px;
@@ -75,7 +105,7 @@
     display: grid;
     grid-template-columns: 126px 1fr;
     grid-template-rows: auto auto 65px;
-    column-gap: 35px;
+    column-gap: 30px;
     max-width: 450px;
     margin: 0 auto;
 
@@ -96,7 +126,7 @@
     }
 
     @media (min-width: $desktop-width) {
-        grid-template-columns: 126px 650px 80px;
+        grid-template-columns: 126px 610px 80px;
         grid-template-rows: auto auto;
         max-width: unset;
         margin: 0;
@@ -398,7 +428,6 @@
     line-height: 24px;
 }
 
-
 .basket_line {
     &::before {
         display: none;
@@ -413,16 +442,8 @@
     }
 }
 
-
-.basket_step {
-    display: none;
-}
-
-.basket_step.active {
-    display: block;
-}
-
 .basket_form {
+
     @media (min-width: $tablet-width) {
         max-width: 768px;
         margin: 0 auto;
@@ -431,11 +452,10 @@
 
     @media (min-width: $desktop-width) {
         max-width: 1500px;
+        margin-left: 160px;
         display: grid;
         grid-template-columns: 620px 685px;
-        grid-template-rows: auto auto auto;
         column-gap: 200px;
-        margin: 0 100px 320px auto;
         padding: 0;
     }
 }

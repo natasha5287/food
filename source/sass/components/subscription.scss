@@ -66,25 +66,18 @@
 
 .subscription_input {
     width: 100%;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
     margin-bottom: 32px;
     padding: 16px 28px;
     background: $white-color;
     border: 1px solid #F4F1F1;
+    outline: none;
 
-    &::placeholder {
-        font-family: "Montserrat", "Arial", sans-serif;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-        color: $darkgrey-color;
-    }
-
-    &:focus {
-        font-family: "Montserrat", "Arial", sans-serif;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 24px;
-        color: $primary-color;
+    &:focus-visible {
+        outline: none;
     }
 
     @media (min-width: $tablet-width) {
@@ -96,6 +89,6 @@
 .subscription_button {
 
     @media (min-width: $tablet-width) {
-        width: max-content;
+        width: initial;
     }
 }

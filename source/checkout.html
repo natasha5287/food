@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="re">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
 
 <body>
 
-    <header class="header header-inner">
+    <header class="header">
         <div class="header_container">
             <div class="header_wrap">
                 <a class="header_logo" href="index.html">
@@ -45,7 +45,7 @@
                             <a class="nav_link" href="questions.html">Q&A</a>
                         </li>
                         <li class="nav_item">
-                            <a class="nav_link" href="article.html">Статьи</a>
+                            <a class="nav_link" href="articles.html">Статьи</a>
                         </li>
                         <li class="nav_item">
                             <a class="nav_link" href="about.html">О нас</a>
@@ -54,9 +54,8 @@
                             <a class="nav_link" href="delivery.html">Оплата и доставка</a>
                         </li>
                         <li class="nav_item">
-                            <a class="nav_link" href="">Контакты</a>
+                            <a class="nav_link" href="contacts.html">Контакты</a>
                         </li>
-
                     </ul>
 
                     <div class="header_wrapper">
@@ -74,7 +73,7 @@
                             </a>
                         </li>
                         <li class="nav_item">
-                            <a class="nav_link nav_link-user popup_link" href="basket.html">
+                            <a class="nav_link nav_link-user" href="#">
                                 <svg class="nav_icon" aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
                                     <use xlink:href="./img/sprite.svg#trolley"></use>
                                 </svg>
@@ -84,10 +83,9 @@
                         </li>
                     </ul>
                 </nav>
-
                 <ul class="header_social">
                     <li class="social_item">
-                        <a class="social_link" href="https://www.facebook.com/">
+                        <a class="social_link social_link-m" href="https://www.facebook.com/">
                             <span class="visually-hidden">Facebook</span>
                             <svg class="social_icon social_icon-m" aria-hidden="true" viewBox="0 0 10 18" width="10"
                                 height="18">
@@ -96,7 +94,7 @@
                         </a>
                     </li>
                     <li class="social_item">
-                        <a class="social_link" href="https://www.instagram.com/">
+                        <a class="social_link social_link-m" href="https://www.instagram.com/">
                             <span class="visually-hidden">Instagram</span>
                             <svg class="social_icon social_icon-m" aria-hidden="true" viewBox="0 0 18 18" width="18"
                                 height="18">
@@ -105,7 +103,7 @@
                         </a>
                     </li>
                     <li class="social_item">
-                        <a class="social_link" href="https://twitter.com/">
+                        <a class="social_link social_link-m" href="https://twitter.com/">
                             <span class="visually-hidden">Twitter</span>
                             <svg class="social_icon social_icon-m" aria-hidden="true" viewBox="0 0 18 16" width="18"
                                 height="16">
@@ -128,76 +126,159 @@
                         <a class="breadcrumbs_link" href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumbs_item">
-                        <a class="breadcrumbs_link breadcrumbs_link-current" href="">Контакты</a>
+                        <a class="breadcrumbs_link breadcrumbs_link-current" href="">Оформление
+                            заказа</a>
                     </li>
                 </ul>
-                <h2 class="banner_title">Контакты</h2>
+                <h2 class="banner_title">Оформление
+                    заказа</h2>
             </div>
         </section>
 
-        <section class="contacts">
-            <h2 class="visually-hidden">Контакты</h2>
-            <div class="contacts_wrap">
-                <h3 class="contacts_title">Как с нами связаться?</h3>
-                <a class="contacts_phone" href="tel:79261716766">+7 926 171 67 66</a>
-                <a class="contacts_mail" href="mailto:info@4ood.com">info@4ood.ru</a>
-                <a class="contacts_question button button-border" href="">Я хочу задать вопрос</a>
-                <ul class="contacts_social">
-                    <li class="contacts_item">
-                        <a class="contacts_link" href="https://instagram.com/">
-                            <span class="visually-hidden">Instagram</span>
-                            <img class="contacts_icon" src="img/instagram-color.svg" width="26" height="26" alt="">
-                            <div class="contacts_box contacts_box-gradient">
-                                <span class="contacts_cite">instagram.com</span>
-                                <span class="contacts_username">@4ood</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="contacts_item">
-                        <a class="contacts_link" href="https://facebook.com/">
-                            <span class="visually-hidden">Facabook</span>
-                            <img class="contacts_icon" src="img/facebook-color.svg" width="30" height="30" alt="">
-                            <div class="contacts_box">
-                                <span class="contacts_cite">facebook.com</span>
-                                <span class="contacts_username">@4ood</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="contacts_item">
-                        <a class="contacts_link" href="https://twitter.com/">
-                            <span class="visually-hidden">Twitter</span>
-                            <img class="contacts_icon" src="img/twitter-color.svg" width="30" height="30" alt="">
-                            <div class="contacts_box">
-                                <span class="contacts_cite">twitter.com</span>
-                                <span class="contacts_username">@4ood</span>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contacts_map">
-                <h3 class="visually-hidden">Карта</h3>
-                <iframe class="map"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1996.7929883483553!2d30.3172265!3d59.9687573!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sua!4v1642702102950!5m2!1sru!2sua"
-                    width="320" height="360" allowfullscreen="" loading="lazy"
-                    title="Офис компании по адресу Алтуфьевское ш., 27а, Москва, Россия"></iframe>
-                <div class="map_adderss">Алтуфьевское ш., 27а, Москва, Россия, 129090</div>
-            </div>
-        </section>
+        <section class="basket">
+            <h2 class="visually-hidden">Корзина покупателя</h2>
 
-        <section class="advice">
-            <h2 class="visually-hidden">Подписка на интернет-магазин "Food by BCG"</h2>
-            <div class="advice_wrap container">
-                <p class="advise_subtitle text-s">оставьте свои контакты</p>
-                <p class="advice_title ">и получите консультацию</p>
-                <form class="advice_form" method="post">
-                    <input class="advice_input input" type="text" placeholder="Ваше имя">
-                    <input class="advice_input input" type="tel" placeholder="Ваш номер телефона" required>
-                    <button class="button button button-border button-border-white">Отправить</button>
+            <div class="basket_grey">
+                <div class="basket_breadcrumbs">
+                    <span class="basket_breadcrumb">Корзина</span>
+                    <svg class="button_arrow" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                        <use xlink:href="./img/sprite.svg#arrow-big"></use>
+                    </svg>
+                    <span class="basket_breadcrumb basket_breadcrumb-active">Оформление
+                        заказа</span>
+                    <svg class="button_arrow" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                        <use xlink:href="./img/sprite.svg#arrow-big"></use>
+                    </svg>
+                    <span class="basket_breadcrumb">Готово!</span>
+                </div>
+            </div>
+
+
+
+            <div class="container">
+                <form class="basket_form form" method="post" action="#" id="form">
+                    <fieldset class="form_fieldset">
+                        <legend class="form_legend">Ваши данные</legend>
+                        <label class="label" for="first-name">Имя
+                            <input class="form_input input" type="text" id="first-name" name="first-name"
+                                placeholder="Ваше имя">
+                        </label>
+                        <label class="label" for="last-name">Фамилия
+                            <input class="form_input input" type="text" id="last-name" name="last-name"
+                                placeholder="Ваша фамилия">
+                        </label>
+                        <label class="label" for="email">Email*
+                            <input class="form_input input" type="email" id="email" name="email"
+                                placeholder="Sample@mail.ru" required>
+                        </label>
+                        <label class="label" for="tel">Телефон*
+                            <input class="form_input input" type="tel" id="tel" name="tel"
+                                placeholder="+7 (000) 000 00 00" required>
+                        </label>
+                    </fieldset>
+                    <fieldset class="form_fieldset">
+                        <legend class="form_legend">Адрес доставки</legend>
+                        <label class="label" for="area">Область / регион
+                            <select class="form_input input input-select" id="area" name="area">
+                                <option value="siberia">Сибирь</option>
+                                <option value="region-1">Регион 1</option>
+                                <option value="region-2">Регион 2</option>
+                            </select>
+                        </label>
+                        <label class="label" for="street">Улица
+                            <input class="form_input input" type="text" id="street" name="street"
+                                placeholder="Введите адрес или получателя">
+                        </label>
+                        <label class="label" for="post">Почтовый индекс
+                            <input class="form_input input" type="number" id="post" name="post" placeholder="XX XXX">
+                        </label>
+                        <div class="form_box">
+                            <label class="label" for="house">Дом
+                                <input class="form_input input" type="text" id="house" name="house" placeholder="No">
+                            </label>
+                            <label class="label" for="flat">Квартира
+                                <input class="form_input input" type="text" id="flat" name="flat" placeholder="No">
+                            </label>
+                        </div>
+                        <label class="label" for="note">Дополнение (не обязательно)
+                            <input class="input input-s" type="text" id="note" name="note"
+                                placeholder="Подъезд, наличие лифта, этаж и т.д.">
+                        </label>
+                        <label class="label" for="comment">Комментарий к заказу (не обязательно)
+                            <textarea class="form_input input input-s" id="comment" name="comment" rows="4"
+                                placeholder="Комментарий к заказу, особые пожеления"></textarea>
+                        </label>
+                        <label class="form_label label" for="save-address">
+                            <input class="visually-hidden" type="checkbox" id="save-address" name="save-address">
+                            <span class="input-mark"></span>
+                            Сохранить адрес
+                        </label>
+                    </fieldset>
+
+                    <div class="basket_wrapper basket_wrapper-personal">
+
+                        <h3 class="basket_title basket_title-box">Мой заказ</h3>
+                        <ul class="basket_items basket_items-gap">
+                            <li class="basket_grid">
+                                <div class="basket_con">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="./img/basket-photo.webp 1x, ./img/basket-photo@2x.webp 2x">
+                                        <img class="basket_min" src="./img/basket-photo.jpg"
+                                            srcset="./img/basket-photo@2x.jpg" loading="lazy" width="60" height="60"
+                                            alt="">
+                                    </picture>
+                                </div>
+                                <span class="basket_name">Detox набор</span>
+                                <span class="basket_cost">790₽</span>
+                            </li>
+                            <li class="basket_grid">
+                                <div class="basket_con">
+                                    <picture>
+                                        <source type="image/webp"
+                                            srcset="./img/basket-photo.webp 1x, ./img/basket-photo@2x.webp 2x">
+                                        <img class="basket_min" src="./img/basket-photo.jpg"
+                                            srcset="./img/basket-photo@2x.jpg" loading="lazy" width="60" height="60"
+                                            alt="">
+                                    </picture>
+                                </div>
+                                <span class="basket_name">Вечерний чай Aksam detox</span>
+                                <span class="basket_cost">790₽</span>
+                            </li>
+                            <li class="basket_grid">
+                                <div class="basket_con">
+                                    <img class="" src="./img/package.svg" loading="lazy" width="40" height="40" alt="">
+                                </div>
+                                <span class="basket_name">Доставка почтой россии</span>
+                                <span class="basket_cost">300₽</span>
+                            </li>
+                        </ul>
+
+                        <div class="basket_wrap basket_wrap-margin">
+                            <h3 class="basket_tag basket_tag-personal">Обратите внимание!</h3>
+                            <p class="basket_text">Ваши личные данные будут использоваться для обработки ваших
+                                заказов,
+                                упрощения вашей работы с сайтом и для других целей, описанных в нашей <a
+                                    class="text-green" href="">политике конфиденциальности.</a></p>
+                        </div>
+
+                        <div class="basket_flex basket_flex-line">
+                            <span class="basket_totaly">Итог</span>
+                            <span class="basket_total">1880₽</span>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form_button">
+                        <button class="form_confirm button button-border" type="submit">подтвердить заказ</button>
+                        <a class="form_back button button-border" href="basket.html">Назад
+                            к списку покупок</a>
+                    </div>
+
                 </form>
             </div>
         </section>
-
     </main>
 
     <footer class="footer">
@@ -221,7 +302,7 @@
                         <a class="footer_link" href="questions.html">Q&A</a>
                     </li>
                     <li class="footer_item">
-                        <a class="footer_link" href="article.html">Статьи</a>
+                        <a class="footer_link" href="articles.html">Статьи</a>
                     </li>
                     <li class="footer_item">
                         <a class="footer_link" href="about.html">О нас</a>
@@ -230,7 +311,7 @@
                         <a class="footer_link" href="delivery.html">Оплата и доставка</a>
                     </li>
                     <li class="footer_item">
-                        <a class="footer_link" href="">Контакты</a>
+                        <a class="footer_link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -319,97 +400,30 @@
         </div>
     </footer>
 
-    <div class="popup">
-        <div class="popup_body">
-            <div class="popup_content">
-                <div class="popup_wrapper">
-                    <h2 class="popup_title">Корзина</h2>
-                    <button class="popup_close" type="button">
-                        <span class="visually-hidden">Закрыть окно</span>
-                    </button>
-                </div>
-                <ul class="popup_list">
-                    <li class="popup_card">
-                        <div class="popup_photo">
-                            <img src="./img/preview.jpg" width="60" height="60" alt="">
-                        </div>
-                        <div class="popup_wrap">
-                            <div class="popup_box">
-                                <h3 class="popup_subtitle">Detox набор</h3>
-                                <button class="basket_remove button" type="button">
-                                    <span class="visually-hidden">Удалить товар из
-                                        корзины</span>
-                                    <svg aria-hidden="true" viewBox="0 0 16 18" width="16" height="18">
-                                        <use class="basket_icon" xlink:href="./img/sprite.svg#bin">
-                                        </use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <p class="popup_text">Sorbent + Antifungal</p>
-                            <div class="popup_box">
-                                <div class="basket_count">
-                                    <button class="popup_button basket_button-decrease button" type="button">
-                                        <span class="visually-hidden">Уменьшить количество
-                                            товара</span>
-                                    </button>
-                                    <input class="input input-quantity input-quantity-s" type="number" min="1" max="100"
-                                        value="1">
-                                    <button class="popup_button basket_button-increase button" type="button">
-                                        <span class="visually-hidden">Увеличить количество
-                                            товара</span>
-                                    </button>
-                                </div>
-                                <span class="popup_price">790₽</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="popup_card">
-                        <div class="popup_photo">
-                            <img src="./img/preview.jpg" width="60" height="60" alt="">
-                        </div>
-                        <div class="popup_wrap">
-                            <div class="popup_box">
-                                <h3 class="popup_subtitle">Вечерний чай Aksam detox</h3>
-                                <button class="basket_remove button" type="button">
-                                    <span class="visually-hidden">Удалить товар из
-                                        корзины</span>
-                                    <svg aria-hidden="true" viewBox="0 0 16 18" width="16" height="18">
-                                        <use class="basket_icon" xlink:href="./img/sprite.svg#bin">
-                                        </use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <p class="popup_text">Сбор на основе сенны, с мягким слабительным действием, направленным на
-                                предотвращение вздутия и запоров.</p>
-                            <div class="popup_box">
-                                <div class="basket_count">
-                                    <button class="popup_button basket_button-decrease button" type="button">
-                                        <span class="visually-hidden">Уменьшить количество
-                                            товара</span>
-                                    </button>
-                                    <input class="input input-quantity input-quantity-s" type="number" min="1" max="100"
-                                        value="1">
-                                    <button class="popup_button basket_button-increase button" type="button">
-                                        <span class="visually-hidden">Увеличить количество
-                                            товара</span>
-                                    </button>
-                                </div>
-                                <span class="popup_price">790₽</span>
-                            </div>
-                        </div>
-                    </li>
+    <div class="modal">
+        <div class="modal_content">
 
-                </ul>
-                <div class="popup_wrapper">
-                    <p class="popup_sum">Сумма</p>
-                    <p class="popup_total">1580₽</p>
-                </div>
-                <a class="popup_checkout button button-border" href="checkout.html">Оформить заказ</a>
-                <a class="popup_basket button button-border" href="basket.html">Корзина</a>
-                <div class="popup_note">Добавьте товаров еще на <b>420₽</b> и Вам станет доступна <b>бесплатная
-                        доставка</b>
-                </div>
+            <div class="modal_breadcrumbs">
+                <span class="basket_breadcrumb">Корзина</span>
+                <svg class="button_arrow" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                    <use xlink:href="./img/sprite.svg#arrow-big"></use>
+                </svg>
+                <span class="basket_breadcrumb">Оформление
+                    заказа</span>
+                <svg class="button_arrow" aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                    <use xlink:href="./img/sprite.svg#arrow-big"></use>
+                </svg>
+                <span class="basket_breadcrumb  basket_breadcrumb-active">Готово!</span>
             </div>
+
+            <div class="modal_wrap">
+                <img class="modal_img" src="./img/succes.png" width="96" height="96" alt>
+                <p class="modal_thank">Спасибо!</p>
+                <h2 class="modal_title">Заказ оформлен</h2>
+                <p class="modal_note">Ожидайте, мы свяжемся с вами в ближайшее время!</p>
+                <a class="modal_button button button-border" href="index.html">На главную страницу</a>
+            </div>
+
         </div>
     </div>
 
