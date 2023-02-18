@@ -38,6 +38,22 @@
 
 .form_input {
     margin-top: 10px;
+
+    &.error {
+        border-color: $red-color;
+    }
+
+    &.error~.form_message {
+        display: block;
+        color: $red-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+    }
+}
+
+.form_message {
+    display: none;
 }
 
 .form_box {

@@ -210,18 +210,57 @@ buttonsFavorite.forEach((e) => {
   })
 })
 
-//Modal
-const form = document.getElementById('form');
+//Validate form
+const form = document.querySelector('.form');
 const buttonModal = document.querySelector('.form_confirm');
 const modal = document.querySelector('.modal');
+const formInputs = document.querySelectorAll('input[required]');
+const inputEmail = document.getElementById('email');
+const inputPhone = document.getElementById('tel');
 
-buttonModal.addEventListener('click', (evt) => {
-  evt.preventDefault();
-  if (form.checkValidity()) {
+
+if (buttonModal) {
+  form.onsubmit = function () {
+    let phoneValue = inputPhone.value;
+    let emailValue = inputEmail.value;
+    let emptyInputs = Array.from(formInputs).filter(input => input.value === '');
+
+    function validateEmail(email) {
+      let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email).toLowerCase());
+    }
+
+    function validatePhone(phone) {
+      let re = /^[0-9\s]*$/;
+      return re.test(String(phone));
+    }
+
+    formInputs.forEach(input => {
+      if (input.value === '') {
+        input.classList.add('error');
+      } else {
+        input.classList.remove('error');
+      }
+    });
+
+    if (emptyInputs.length !== 0) {
+      return false;
+    }
+
+    if (!validateEmail(emailValue)) {
+      inputEmail.classList.add('error');
+      return false;
+    }
+
+    if (!validatePhone(phoneValue)) {
+      inputPhone.classList.add('error');
+      return false;
+    } else {
+      inputPhone.classList.remove('error');
+    }
+
     modal.classList.add('opened');
-  } else {
-    alert('Заполните обязательные поля');
+    return false;
   }
-})
 
-
+}
