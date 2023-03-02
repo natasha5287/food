@@ -77,6 +77,9 @@
         flex-direction: column;
         row-gap: 25px;
         flex-grow: 1;
+        max-height: 220px;
+        overflow: auto;
+        overflow-x: hidden;
     }
 
     .popup_card {
